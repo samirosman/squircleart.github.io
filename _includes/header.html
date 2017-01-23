@@ -1,0 +1,8 @@
+<nav>
+  <ul id="header_ul">
+    <li id="header_li"><a id="header_links" {% if page.url == '/' %} class="current_page" {% endif %} href="/index.html">Home</a></li>
+    <li id="header_li"><a id="header_links" {% if page.url == '/posts.html' %} class="current_page" {% endif %} href="/posts.html">Posts</a></li>
+    <li id="header_li"><a id="header_links" {% if page.url == '/resources.html' %} class="current_page" {% endif %} href="/resources.html">Resources</a></li>
+    <li id="header_li"><a id="header_links" {% if page.url == '/about.html' %} class="current_page" {% endif %} href="/about.html">About</a></li>
+  </ul>
+</nav>
