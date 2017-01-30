@@ -1,8 +1,8 @@
 <nav>
-  <ul id="header_ul">
-    <li id="header_li"><a id="header_links" {% if page.url == '/' %} class="current_page" {% endif %} href="/index.html">Home</a></li>
-    <li id="header_li"><a id="header_links" {% if page.url == '/posts.html' %} class="current_page" {% endif %} href="/posts.html">Posts</a></li>
-    <li id="header_li"><a id="header_links" {% if page.url == '/resources.html' %} class="current_page" {% endif %} href="/resources.html">Resources</a></li>
-    <li id="header_li"><a id="header_links" {% if page.url == '/about.html' %} class="current_page" {% endif %} href="/about.html">About</a></li>
+  <ul class="nav">
+    <li><a id="header_links" {% if page.url == '/' %} class="current_page" {% endif %} href="/index.html"><span id="nav-text">Home</span></a></li>
+    <li><a id="header_links" {% if page.url == '/posts.html' %} class="current_page" {% endif %} href="/posts.html"><span id="nav-text">Posts</span></a></li>
+    <li><a id="header_links" {% if page.url == '/resources.html' %} class="current_page" {% endif %} href="/resources.html"><span id="nav-text">Resources</span></a></li>
+    <li><a id="header_links" {% if page.url == '/about.html' %} class="current_page" {% endif %} href="/about.html"><span id="nav-text">About Me</span></a></li>
   </ul>
 </nav>

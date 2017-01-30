@@ -1,5 +1,14 @@
 ---
 layout: default
+title: Posts
 ---
-
-<h1>My Posts</h1>
+{% for post in site.posts %}
+  <div class="post">
+    <a href="{{post.url}}">
+    <img src="{{ post.image_path }}" alt="{{ post.title }}"/>
+    </a>
+    <h2 style="margin:0">{{ post.title }}</h2>
+    <hr>
+    <p style="margin:0">{{ post.description }}</p>
+  </div>
+{% endfor %}

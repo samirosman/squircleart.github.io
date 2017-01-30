@@ -1,5 +1,14 @@
 ---
 layout: default
+title: Resources
 ---
-
-<h1> Resources </h1>
+{% for resource in site.resources %}
+<div class="post">
+  <img src="{{ resource.image_path }}" alt="{{ resource.title }}"/>
+  <h2 style="margin:0">{{ resource.title }}</h2>
+  <hr>
+  <a href="{{resource.file_path}}" download>
+  <button class="download-button"><span>Download </span></button>
+  </a>
+</div>
+{% endfor %}

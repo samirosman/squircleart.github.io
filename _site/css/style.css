@@ -3,34 +3,118 @@
 }
 body {
   margin: 0;
-  background-color: #EAEAEA;
+  background-color: #F1F1F1;
 }
-#header_ul {
+.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
-}
-#header_li {
-  float: left;
-  border-right:1px solid #585858;
-}
-#header_links {
-  display: block;
-  color: white;
   text-align: center;
-  padding: 14px 16px;
+}
+.nav li {
+  display: inline;
+}
+.nav a {
+  display:inline-block;
+  text-align: center;
+  padding: 15px;
   text-decoration: none;
 }
-#header_links:hover:not(.current_page) {
+.nav a:hover:not(.current_page) {
   background-color: #111;
 }
 .current_page {
     background-color: #4CAF50;
 }
-#footer {
+#nav-text {
+  font-weight: bolder;
+  font-size: 16px;
+  color: white;
+}
+.footer {
   background-color: #333;
   height: auto;
   padding: 15px;
+  clear: both;
+}
+#main_wrapper {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 3px grey;
+}
+.post {
+  float: left;
+  width: 23%;
+  padding: 10px 10px;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: thin solid #f8f8f8;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  background-color: white;
+  margin: 10px 10px;
+  text-align: center;
+  transition: box-shadow 150ms ease-in-out;
+}
+.font-effect-3d {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 100px;
+  margin: 20px;
+}
+.post:hover {
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+}
+.posts-head {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.download-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.download-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.download-button span:after {
+  content: "\2913";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.download-button:hover span {
+  padding-right: 25px;
+}
+
+.download-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
