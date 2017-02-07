@@ -1,2 +1,4 @@
 collections:
    resources:
+
+highlighter: pygments

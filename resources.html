@@ -2,13 +2,16 @@
 layout: default
 title: Resources
 ---
+<div class="post-containter">
 {% for resource in site.resources %}
 <div class="post">
-  <img src="{{ resource.image_path }}" alt="{{ resource.title }}"/>
-  <h2 style="margin:0">{{ resource.title }}</h2>
-  <hr>
+  <img class="post-image" src="{{ resource.image_path }}" alt="{{ resource.title }}"/>
+  <center>
+  <h3>{{ resource.title }}</h3>
   <a href="{{resource.file_path}}" download>
   <button class="download-button"><span>Download </span></button>
   </a>
+  </center>
 </div>
 {% endfor %}
+</div>
