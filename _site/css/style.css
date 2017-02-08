@@ -1,10 +1,9 @@
 /* General Setting */
 * {
   font-family: 'Roboto Slab', serif;
-  -webkit-font-smoothing: antialiased;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-  font-size: 24px;
+  font-size: 20px;
   color: #333;
+  line-height: 1.375em;
 }
 body {
   margin: 0;
@@ -83,6 +82,7 @@ body {
   -webkit-flex-flow: row wrap;
 }
 .post {
+  text-align: center;
   float: left;
   width: 30%;
   padding: 10px 10px;
@@ -106,8 +106,8 @@ body {
 img.post-image {
 	max-width: 100%;
 	height: auto;
-  border-top: 2px solid #558abb;
-  border-bottom: 2px solid #00c8bd;
+  border-top: 3px solid #558abb;
+  border-bottom: 3px solid #00c8bd;
 }
 
 /* Resources */
@@ -128,10 +128,12 @@ img.post-image {
 }
 
 .download-button span {
+  font-size: 1em;
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  color: #FFF;
 }
 
 .download-button span:after {
@@ -153,16 +155,33 @@ img.post-image {
 }
 
 /* Post Body */
-
+h1 {
+  font-size: 3em;
+  line-height: 1.05em;
+}
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+h4 {
+  font-size: 1.125em;
+  line-height: 1.22222222em;
+}
 .post-body {
   padding: 1% 15% 15% 15%;
   background-color: #FFFFFF;
   color: #333;
 }
 
-.post-body .post-title {
+.post-title {
   text-align: center;
-  border-bottom: 3px solid #f1f1f1;
+  padding: 10px;
+  border-bottom: 4px solid #e5e5e5;
+  border-top: 4px solid #e5e5e5;
 }
 
 .post-body img {
@@ -171,9 +190,11 @@ img.post-image {
 }
 
 .post-body blockquote {
-  border-left: 8px solid #4CAF50;
+  border-left: 4px solid #afafaf;
   padding: 1rem;
   color: #494949;
+  font-size: 1.5em;
+  line-height: 1.45833333;
 }
 .post-body a {
   text-decoration: none;
