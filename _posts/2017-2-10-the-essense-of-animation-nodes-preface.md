@@ -1,7 +1,7 @@
 ---
 title: "The Essence Of Animation Nodes: Preface"
 layout: post
-image_path: /images/the-essence-of-animation-nodes-preface.png
+image_path: /images/the-essence-of-animation-nodes.png
 description:  "We talk about Animation Nodes and get ready to start the tutorial series"
 ---
 
@@ -111,3 +111,5 @@ git clone "https://github.com/JacquesLucke/animation_nodes.git"
 {% include note.html content="Make sure to have installed git first ." %}
 
 * Install numpy python module from your package manager or Pip or other methods if you don't have it.
+
+{% include note.html content="At the time of making this series, ANimation nodes 1.6 was used" %}
