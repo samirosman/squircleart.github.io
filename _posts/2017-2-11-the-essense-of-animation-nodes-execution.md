@@ -12,7 +12,7 @@ options to control this system.
 
 Animation Nodes take the node tree you created and convert it to a python code and then run that code to see the result of your node tree.
 
-There is multiple routines and methods AN can follow to run the code and we are going to look at those options now. And that is using this simple example of a node tree that sum 2 integrs and display that result.
+There is multiple routines and methods AN can follow to run the code and we are going to look at those options now. And that is using this simple example of a node tree that sum 2 integers and display that result.
 
 ![Example](/images/the-essence-of-animation-nodes-the-system/execution.gif  "Example")
 
@@ -24,9 +24,9 @@ By default, Auto execution is enabled, which does what it says, it automatically
 
 ### Always:
 
-It is enabled by default and it constantly and successively run the node tree inspite of the context and space you are in or using.
+It is enabled by default and it constantly and successively run the node tree in spite of the context and space you are in or using.
 
-This option is accompanied by a propert called **Min Time Difference** which is the slider you see in the panel, which basically run the node tree every t second where t is that property.
+This option is accompanied by a property called **Min Time Difference** which is the slider you see in the panel, which basically run the node tree every t second where t is that property.
 
 This option consume the CPU and thus it slow down every other process that is taking place, and you might notice blender lagging because of this.
 
@@ -37,7 +37,7 @@ So you really shouldn't be using that node except for some limited situations wh
 
 This option will run the node tree whenever you add or remove a node to the current node tree.
 
-And this is probably why you should enable it after disabling **Always** because it is probable that you will need AN to update everytime you change your node tree.
+And this is probably why you should enable it after disabling **Always** because it is probable that you will need AN to update every time you change your node tree.
 
 ![Tree Changed](/images/the-essence-of-animation-nodes-the-system/tree-changed.gif  "Tree Changed")
 
@@ -59,11 +59,11 @@ Notice how the node tree run whenever the frame change.
 
 This option run the node tree when ever you change a value inside a node manually. If you plugged the time info node to one of the inputs and played the animation the node tree won't update because you have to manually edit the inputs.
 
-And this is also probably why you should enable it after disabling **Always** because it is probable that you will need AN to update everytime you change a value in the node tree.
+And this is also probably why you should enable it after disabling **Always** because it is probable that you will need AN to update every time you change a value in the node tree.
 
 ![Property Changed](/images/the-essence-of-animation-nodes-the-system/property-changed.gif  "Property Changed")
 
-Notice how the node tree run whenever I chnage a value.
+Notice how the node tree run whenever I change a value.
 
 ### Triggers:
 
@@ -77,9 +77,9 @@ Lets look at an example where we are to watch for a change in an object's locati
 
 ![Triggers](/images/the-essence-of-animation-nodes-the-system/triggers.gif  "Triggers")
 
-You can see that I added a trigger that watch for a change in an object property and choosed the object to watch---Cube---and typed the **Data Path** for the property I want to watch for, in this case it was *"location"*.
+You can see that I added a trigger that watch for a change in an object property and chose the object to watch---Cube---and typed the **Data Path** for the property I want to watch for, in this case it was *"location"*.
 
-To get the data path for any object propery, just hover it and press <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd> which will copy the *ID Data Path* for that property which you can then paste into the field for the data path.
+To get the data path for any object property, just hover it and press <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd> which will copy the *ID Data Path* for that property which you can then paste into the field for the data path.
 
 Here are some examples on object data paths:
 
@@ -94,7 +94,7 @@ draw_type     #Maximum draw type.
 
 ~~~
 
-Now, what if you want to watch some other property thats ins't of an object. For instance, the strength of the background light.
+Now, what if you want to watch some other property thats isn't of an object. For instance, the strength of the background light.
 
 This can be done by choosing **Scene** instead of **Object** when adding the trigger. But getting the data path for such properties just got harder, because you have to define which context the property is in, and the best way to do so is by checking the ID path from the the **data-block** data base like so:
 
@@ -107,7 +107,7 @@ Examples:
 render.resolution_x
 #Notice that the original one was:
 bpy.data.scenes["Scene"].render.resolution_x
-#But the first part was ommited
+#But the first part was omited
 #because scene was already defined in the trigger.
 
 #Notice how we defined the group first
@@ -126,13 +126,13 @@ Consider the scenario where we have tenths of objects that we are using the loca
 
 Another situation where **Always** is in fact a very good solution is simulations and especially ones that are iterative like PDEs where I want to see the simulation in real time and let it run as fast as possible.
 
-You may also witness some speed up when using **Always** which I have noticed during my work, but I am not entirly sure if this is an actual thing.
+You may also witness some speed up when using **Always** which I have noticed during my work, but I am not entirely sure if this is an actual thing.
 
 ### Manual Execution:
 
 Last but not least, the **Execute note tree** button which just run the node tree when you press it.
 
-I usually use that while disabling **Auto execution** when I am working on a risky node tree that may return some fetal errors or when I am doing an operator that only need to run once.
+I usually use that while disabling **Auto execution** when I am working on a risky node tree that may return some fatal errors or when I am doing an operator that only need to run once.
 
 ---
 
@@ -142,19 +142,19 @@ lets now look at errors that you may encounter while working on your projects.
 
 ## Errors
 
-We will divid the errors into couple of types and look at why they are there and how to solve them.
+We will divide the errors into couple of types and look at why they are there and how to solve them.
 
-### Non Fetal Errors:
+### Non fatal Errors:
 
-Those errors happen at individual nodes and doesn't affect the rest of the tree and it doesn't stope its execution.
+Those errors happen at individual nodes and doesn't affect the rest of the tree and it doesn't stop its execution.
 
 #### Example:
 
-![Non fetal Errors](/images/the-essence-of-animation-nodes-the-system/nonfetal-errors.png  "Non fetal Errors")
+![Non fatal Errors](/images/the-essence-of-animation-nodes-the-system/nonfatal-errors.png  "Non fatal Errors")
 
-Most of these errors are just errors caused by nodes for abviouse reasons and they are easy to fix. I am guessing you know how to fix that error, don't you?
+Most of these errors are just errors caused by nodes for obvious reasons and they are easy to fix. I am guessing you know how to fix that error, don't you?
 
-### Fetal Errors:
+### fatal Errors:
 
 Those are nightmares, they are designed to wake you at night.
 
@@ -164,4 +164,4 @@ They happen due to an error in the python code of the nodes itself which probabl
 
 AN will display a red border and stop executing and tells you to report this bug to the developers, because it is probably is, so report when ever this happen to you.
 
-I don't really have an example now to show you how it happen or how to fix it, but we may encounter some of these on our way. So don't worry, I will show you a Fetal error before we finish this series.
+I don't really have an example now to show you how it happen or how to fix it, but we may encounter some of these on our way. So don't worry, I will show you a fatal error before we finish this series.
