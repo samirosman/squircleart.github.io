@@ -3,6 +3,7 @@ title: "The Essence Of Animation Nodes: Preface"
 layout: post
 image_path: /images/the-essence-of-animation-nodes.png
 description:  "We talk about Animation Nodes and get ready to start the tutorial series"
+category: Animation-Nodes
 ---
 
 ## Animation Nodes

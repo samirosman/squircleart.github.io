@@ -3,6 +3,7 @@ title: "The Essence Of Animation Nodes: The system"
 layout: post
 image_path: /images/the-essence-of-animation-nodes.png
 description:  "We look at AN's system and the different execution methods as well as errors"
+category: Animation-Nodes
 ---
 
 We will start this series by explaining the system of AN and the available
