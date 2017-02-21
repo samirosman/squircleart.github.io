@@ -14,7 +14,7 @@ We will also look at data types and how it is handled in AN.
 
 Lets look at a very basic example on creating and manipulating data in animation nodes ... Creating a vector, scaling it by factor then debug the result.
 
-![Simple Example](/images/the-essense-of-animation-nodes-nodes&data/basic-example.png  "Simple Example")
+![Simple Example](/images/the-essence-of-animation-nodes-data/basic-example.png  "Simple Example")
 
 ## Creating Data
 
@@ -50,11 +50,11 @@ Every **Data Type** has a group of nodes that can edit it and they are nicely or
 
 Lets look at another example where we created a list of floats and shuffled it.
 
-![Copy Data Example](/images/the-essense-of-animation-nodes-nodes&data/copy-data-example.png  "Copy Data Example")
+![Copy Data Example](/images/the-essence-of-animation-nodes-data/copy-data-example.png  "Copy Data Example")
 
 Just like the other example, we created the data using the *Create Float List* node and edit it using the *Shuffle List* node. But what If I wanted to shuffle the same list again but with a different seed?
 
-![Copy Data Example 2](/images/the-essense-of-animation-nodes-nodes&data/copy-data-example_2.png  "Copy Data Example 2")
+![Copy Data Example 2](/images/the-essence-of-animation-nodes-data/copy-data-example_2.png  "Copy Data Example 2")
 
 Well it is very easy to do, but something is happening here that you can't see.
 
@@ -68,7 +68,7 @@ You see, AN spot where copies are needed and copied them to keep your data intac
 
 There is a feature in AN that let you visualize data copies and that is **Color Mode** which you can change from the **Developer Panel** in the tools menu. By changing that to **Needed copied** the nodes that copy data will be colored in red:
 
-![Color Mode](/images/the-essense-of-animation-nodes-nodes&data/color-mode.png  "Color Mode")
+![Color Mode](/images/the-essence-of-animation-nodes-data/color-mode.png  "Color Mode")
 
 You can see that the upper Create node is colored in red and that is because there is 2 nodes editing its data and thus it copied the data to keep it intact for the other user.
 
@@ -76,7 +76,7 @@ You can see that the upper Create node is colored in red and that is because the
 
 There is also a feature in AN that allow you to control the copying of data, So for instance, I can prevent a node from copying data even though it met the conditions Jacques described above.
 
-![Performance Mode](/images/the-essense-of-animation-nodes-nodes&data/performance.png  "Performance Mode")
+![Performance Mode](/images/the-essence-of-animation-nodes-data/performance.png  "Performance Mode")
 
 I changed to the performance panel and disabled the copying of the input **List** which is our float list for both *Remove nodes*.
 
@@ -104,7 +104,7 @@ There is a special data type I want to talk about though.
 
 Generic data type accept any type of data including lists and can store different types of data in the same list. But here comes the problem of identifying the data when I want to get them. To understand this, lets look at the following example:
 
-![Layered List](/images/the-essense-of-animation-nodes-nodes&data/double-lists.png  "Layered List")
+![Layered List](/images/the-essence-of-animation-nodes-data/double-lists.png  "Layered List")
 
 As you can see, I created a generic list that contain 2 different lists, then I went on to get the first element of the list which is the integer list.
 
@@ -123,7 +123,7 @@ The Convert node is a little cute node that have the ability to convince a node 
 
 That node is a passive node that is usually added automatically in some cased but you can add it from the search menu.
 
-![Convert Node](/images/the-essense-of-animation-nodes-nodes&data/convert.png  "Convert Node")
+![Convert Node](/images/the-essence-of-animation-nodes-data/convert.png  "Convert Node")
 
 Look how this cutie managed to convince the Get guy that the input was actually a list.
 
