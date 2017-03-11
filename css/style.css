@@ -179,7 +179,9 @@ h4 {
 
 .post-title {
   text-align: center;
-  padding: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
   border-bottom: 4px solid #e5e5e5;
   border-top: 4px solid #e5e5e5;
 }
