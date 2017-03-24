@@ -51,7 +51,7 @@ file_name = list[-1]
 #-1 means last element
 
 #Second Split Node.
-list = path.split(".")
+list = file_name.split(".")
 ["file", "png"]
 
 #I only care about the last element so I get it.

@@ -213,6 +213,10 @@ h4 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.post-body li {
+    margin: 1em 0;
+}
+
 /* Code  */
 
 .post-body code {
