@@ -17,19 +17,19 @@ There is multiple routines and methods AN can follow to run the code and we are 
 
 ![Example](/images/the-essence-of-animation-nodes-the-system/execution.gif  "Example")
 
-First, you may have noticed that some number changing very rapidly, and this is the **Execution Time** which is basically the time that AN took to convert and run the node tree and it is usually measured in milliseconds.
+First, you may have noticed that some numbers are changing very rapidly, and this is the **Execution Time** which is basically the time that AN took to convert and run the node tree and it is usually measured in milliseconds.
 
 ## Execution methods:
 
-By default, Auto execution is enabled, which does what it says, it automatically execute the node tree based on a specific rules you specifies. and those rules are specified in the panel which include:
+By default, Auto execution is enabled, which does what it says, it automatically executes the node tree based on a specific rules you specify. and those rules are specified in the panel which include:
 
 ### Always:
 
-It is enabled by default and it constantly and successively run the node tree in spite of the context and space you are in or using.
+It is enabled by default and it constantly and successively runs the node tree in spite of the context and space you are in or using.
 
-This option is accompanied by a property called **Min Time Difference** which is the slider you see in the panel, which basically run the node tree every t second where t is that property.
+This option is accompanied by a property called **Min Time Difference** which is the slider you see in the panel, which basically runs the node tree every t second where t is that property.
 
-This option consume the CPU and thus it slow down every other process that is taking place, and you might notice blender lagging because of this.
+This option consumes the CPU and thus it slow down every other process that is taking place, and you might notice blender lagging because of this.
 
 It doesn't really make sense to keep running the node tree even if you aren't changing anything in it.
 So you really shouldn't be using that node except for some limited situations which is the situation where all other options fails to do the job that it is required to do, and we will give an example for that at the end.
@@ -42,33 +42,33 @@ And this is probably why you should enable it after disabling **Always** because
 
 ![Tree Changed](/images/the-essence-of-animation-nodes-the-system/tree-changed.gif  "Tree Changed")
 
-Notice how the time changed (which means AN run) when I added another node.
+Notice how the time changed (which means AN runs) when I added another node.
 
 ### Frame Changed:
 
-This option run the node tree whenever the current frame change.
+This option runs the node tree whenever the current frame change.
 
-When we get to animating using AN, it is probable that we will need to run the node tree every time the frame change (Animation is played) because the whole node tree depend on the variable **Current Frame**.
+When we get to animating using AN, it is probable that we will need to run the node tree every time the frame changes (Animation is played) because the whole node tree depends on the variable **Current Frame**.
 
-Animation Nodes won't know that the frame change unless you tell it to watch for frame change and this is done by enabling this option. So make sure to check this option when ever you are animating.
+Animation Nodes won't know that the frame changes unless you tell it to watch for frame change and this is done by enabling this option. So make sure to check this option whenever you are animating.
 
 ![Time Changed](/images/the-essence-of-animation-nodes-the-system/frame-changed.gif  "Time Changed")
 
-Notice how the node tree run whenever the frame change.
+Notice how the node tree runs whenever the frame change.
 
 ### Property Changed:
 
-This option run the node tree when ever you change a value inside a node manually. If you plugged the time info node to one of the inputs and played the animation the node tree won't update because you have to manually edit the inputs.
+This option runs the node tree whenever you change a value inside a node manually. If you plugged the time info node to one of the inputs and played the animation the node tree won't update because you have to manually edit the inputs.
 
 And this is also probably why you should enable it after disabling **Always** because it is probable that you will need AN to update every time you change a value in the node tree.
 
 ![Property Changed](/images/the-essence-of-animation-nodes-the-system/property-changed.gif  "Property Changed")
 
-Notice how the node tree run whenever I change a value.
+Notice how the node tree runs whenever I change a value.
 
 ### Triggers:
 
-Now you might be wondering, what if we wanted to run the node tree if an external property other than the frame changed. For instance, the location of an object, its draw options or even its name.
+Now you might be wondering, what if we wanted to run the node tree if an external property other than the frame changed. For instance, the location of an object, its draw options, or even its name.
 
 This isn't the situation where you would start using **Always**, there is still another very neat feature we haven't looked at, And that is ... Triggers.
 
@@ -139,7 +139,7 @@ I usually use that while disabling **Auto execution** when I am working on a ris
 
 You should now be aware of what works the best for you and the project you are working on when it comes to the optimal execution method.
 
-lets now look at errors that you may encounter while working on your projects.
+Let's now look at errors that you may encounter while working on your projects.
 
 ## Errors
 
@@ -161,8 +161,8 @@ Those are nightmares, they are designed to wake you at night.
 
 They stop the whole node tree from executing and won't run till you fix them. Some of them even need to restart blender after fixing the problem.
 
-They happen due to an error in the python code of the nodes itself which probably happen when you try to do something with the node that the developers didn't consider, but AN is smart and avoids almost all of those complications. This may also happen when you try to code something yourself that isn't really right.
+They happen due to an error in the python code of the nodes itself which probably happens when you try to do something with the node that the developers didn't consider, but AN is smart and avoids almost all of those complications. This may also happen when you try to code something yourself that isn't really right.
 
-AN will display a red border and stop executing and tells you to report this bug to the developers, because it is probably is, so report when ever this happen to you.
+AN will display a red border and stop executing and tells you to report this bug to the developers, because it is probably is, so report when ever this happens to you.
 
 I don't really have an example now to show you how it happen or how to fix it, but we may encounter some of these on our way. So don't worry, I will show you a fatal error before we finish this series.
