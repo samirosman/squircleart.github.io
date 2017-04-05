@@ -145,6 +145,6 @@ One could just use a trigonometric functions to make a completely smooth alterna
 
 We didn't do much in this tutorial, but we got a sense of what it is like to do noding and we learned the effects of some math operations on relations:
 
-- Multiplication increase the rate of the relation.
-- Addition offset the relation.
-- Modulo repeat the relation.
+- Multiplication increases the rate of the relation.
+- Addition offsets the relation.
+- Modulo repeats the relation.

@@ -38,7 +38,7 @@ And that is what a normal map does, it provide information about normals per pix
 
 ## Types Of Normal Maps:
 
-There is multiple types of normal maps which are the same in the way that each define the normals of the shading point but different in the method of doing so.
+There is multiple types of normal maps which are the same in the way that each defines the normals of the shading point but different in the method of doing so.
 
 ### World Space Normal Map:
 
@@ -84,9 +84,9 @@ Here is the individual components of the normal map shown above where you can se
 
 ![Normal Components](/images/normal-map-generation/normal_components.png  "Normal Components")
 
-Take your time looking at this image and try to figure out what it represent, A white color in the first image represent a vector that is pointing greatly toward the positive x direction while a black color represent a vector pointing in the negative x direction, grey color on the other hand tells us that the vector is neither pointing in the positive or negative x direction (remember that a grey color represent zero in the real scale). The same apply for Y direction of the second image. It is also worth noting that the points in the z component (last image) are mostly white because if you remember correctly, we said that the normal map vectors are generally pointing in the same direction as the original normal. A grey colored points however in the z component is where the other 2 components have a stronger values because the vector is normalized and increasing a component will decrease the others.
+Take your time looking at this image and try to figure out what it represents, A white color in the first image represent a vector that is pointing greatly toward the positive x direction while a black color represent a vector pointing in the negative x direction, grey color on the other hand tells us that the vector is neither pointing in the positive or negative x direction (remember that a grey color represents zero in the real scale). The same apply for Y direction of the second image. It is also worth noting that the points in the z component (last image) are mostly white because if you remember correctly, we said that the normal map vectors are generally pointing in the same direction as the original normal. A grey colored points however in the z component is where the other 2 components have a stronger values because the vector is normalized and increasing a component will decrease the others.
 
-Ok, great, now we know what we are suppose to calculate in order to generate a normal map. Lets get into generating it.
+Ok, great, now we know what we are supposed to calculate in order to generate a normal map. Let's get into generating it.
 
 # Generating Normal Maps
 
@@ -257,7 +257,7 @@ $$
 
 ### Backward Finite Difference
 
-the Backward finite difference is very similar to the forward one, but it sample the point before the point and not the one after it and so equation $\eqref{7}$ becomes:
+The Backward finite difference is very similar to the forward one, but it sample the point before the point and not the one after it and so equation $\eqref{7}$ becomes:
 
 $$\begin{equation}
 \frac{\partial F}{\partial x} = F(x-1) - F(x) \label{8}

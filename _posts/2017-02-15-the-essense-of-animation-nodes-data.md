@@ -102,7 +102,7 @@ There is a special data type I want to talk about though.
 
 ### Generic Data Type
 
-Generic data type accept any type of data including lists and can store different types of data in the same list. But here comes the problem of identifying the data when I want to get them. To understand this, lets look at the following example:
+Generic data type accept any type of data including lists and can store different types of data in the same list. But here comes the problem of identifying the data when I want to get them. To understand this, let's look at the following example:
 
 ![Layered List](/images/the-essence-of-animation-nodes-data/double-lists.png  "Layered List")
 
@@ -117,7 +117,7 @@ But I can't because every time I plug the element (integer list) into the second
 
 **Get Node:** "No it is not, get me a list"
 
-No matter how hard you try convince it that the input is actually a  list, it just wont listen and that's where the **Convert Node** come to the rescue.
+No matter how hard you try convince it that the input is actually a list, it just wont listen and that's where the **Convert Node** come to the rescue.
 
 The Convert node is a little cute node that have the ability to convince a node that a data is another type of data, and it is usually used with the generic data type.
 
