@@ -6,19 +6,19 @@ description:  "We talk about how data is handled in Animation Nodes"
 category: Animation-Nodes
 ---
 
-We said in the previous tutorial that our node tree will be converted into a python code which can then be executed and this means that AN is some how related to how python work, so we will look at some of the properties of that system.
+We said in the previous tutorial that our node tree will be converted into a python code which can then be executed and this means that AN is some how related to how python works, so we will look at some of the properties of that system.
 
 We will also look at data types and how it is handled in AN.
 
 # AN Data
 
-Lets look at a very basic example on creating and manipulating data in animation nodes ... Creating a vector, scaling it by factor then debug the result.
+Let's look at a very basic example on creating and manipulating data in animation nodes ... Creating a vector, scaling it by factor then debugging the result.
 
 ![Simple Example](/images/the-essence-of-animation-nodes-data/basic-example.png  "Simple Example")
 
 ## Creating Data
 
-In the above example, the node I used to create the data is the *Combine Vector Node* which basically create a vector out of xyz values.
+In the above example, the node I used to create the data is the *Combine Vector Node* which basically creates a vector out of xyz values.
 
 When I created a vector, AN stored it in the computer **memory** so that I can access it later.
 
@@ -32,7 +32,7 @@ In the old days of programming, programmers and programming languages were more 
 
 OOP concentrated on the data itself and tried to model data as a real life objects that have properties and abilities, and the concept of objects was then introduced which made programs more efficient, easier to program and easier to understand.
 
-But objects introduced problems as well, and we are going to talk about that later. In fact, I am telling you this because we are going to visit it later and see how object made our life harder for some projects.
+But objects introduced problems as well, and we are going to talk about that later. In fact, I am telling you this because we are going to visit it later and see how objects made our life harder for some projects.
 
 #### The Vector Object
 

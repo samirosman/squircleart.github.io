@@ -21,7 +21,7 @@ Animation Nodes is a complete **Framework** for creating almost everything in bl
 
 The previous applications is as far as artists are concerned. However, some people like TDs such as myself are interested in more advanced applications and uses for Animation Nodes which yield some interesting tools that artists can use.
 
-**Engineers**, **Scientists**, **Mathematician** and **Students** like to have a *Numerical computing software* such as [Matlab](https://en.wikipedia.org/wiki/MATLAB)  or [Octave](https://en.wikipedia.org/wiki/GNU_Octave)  which is basically a program that provide them with tools to do *Numerical analysis*, *Statistical studies*, *Plotting*, etc.
+**Engineers**, **Scientists**, **Mathematician** and **Students** like to have a *Numerical computing software* such as [Matlab](https://en.wikipedia.org/wiki/MATLAB)  or [Octave](https://en.wikipedia.org/wiki/GNU_Octave)  which is basically a program that provides them with tools to do *Numerical analysis*, *Statistical studies*, *Plotting*, etc.
 Being a student myself, I didn't really need any of these programs because Animation Nodes was more than sufficient for my study.
 
 ### What can be done?
@@ -51,7 +51,7 @@ After that till now people started to complain about the lack of tutorials. And 
 * [Jacques Lucke's youtube channel](https://www.youtube.com/channel/UC5ABAuGEvBMmau-1xJsNw6w)
 * [Jimmy Gunawan blog and youtube channel](blendersushi.blogspot.com)
 
-But that wasn't enough for them either. So in this series I am going to teach you everything you should know to set off on your own and save you a month you would have spended in getting your head around Animation Nodes.
+But that wasn't enough for them either. So in this series I am going to teach you everything you should know to set off on your own and save you a month you would have spent in getting your head around Animation Nodes.
 
 ### How I learned it?
 
