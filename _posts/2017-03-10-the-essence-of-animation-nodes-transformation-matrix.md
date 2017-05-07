@@ -26,7 +26,7 @@ $$
 \end{bmatrix}
 $$
 
-And thats because of some mathematical concepts called **Homogeneous coordinates** and **Affine Transformations** which basically differentiate between coordinates matrices that define a point and ones that define vectors (directions). But we won't be looking at any of that.
+And that's because of some mathematical concepts called **Homogeneous coordinates** and **Affine Transformations** which basically differentiate between coordinates matrices that define a point and ones that define vectors (directions). But we won't be looking at any of that.
 
 Now, A **Transformation Matrix** is a matrix that when we multiply to a coordinates matrix (A matrix that include the coordinates of an object), it will transform that coordinates matrix in some way based on its contents. If we let $C$ be a coordinates matrix that define an object's location and $M$ be a transformation matrix, then their product is a coordinates matrix $C_n$ that represent the object's new position.
 
@@ -86,7 +86,7 @@ We say that the local space of the object is identical to its global space if th
 
 ## Matrices In AN
 
-Animation Nodes has a matrix data type that is designed to only work as a $4 \times 4$ transformation matrix, so you can't use it for anything else. AN also have a group of nodes that are designed to operate on matrices and we will look at some of them now.
+Animation Nodes has a matrix data type that is designed to only work as a $4 \times 4$ transformation matrix, so you can't use it for anything else. AN also has a group of nodes that are designed to operate on matrices and we will look at some of them now.
 
 ### Object Matrix Input/Output Nodes:
 
@@ -97,7 +97,7 @@ Animation Nodes has a matrix data type that is designed to only work as a $4 \ti
 This node will return a transformation matrix that represent the object's location ,rotation and scale.
 But wait ... we have been saying that a transformation matrix transforms an object, however, we never said anything about a transformation matrix that define the object's location, rotation and scale.
 
-Well, it is really simple, you can think of the object's location, rotation and scale as a transformation of an identity object, that is, assume that there exist an object we call **Identity** and is positioned at $(0,0,0)$ and has an euler angle of $(0,0,0)$ and a scale of $(1,1,1)$, when I describe an object with a transformation matrix $M$ , I am basically saying that our object is the Identity object transformed by the transformation matrix $M$.
+Well, it is really simple, you can think of the object's location, rotation and scale as a transformation of an identity object, that is, assume that there exists an object we call **Identity** and is positioned at $(0,0,0)$ and has an euler angle of $(0,0,0)$ and a scale of $(1,1,1)$, when I describe an object with a transformation matrix $M$ , I am basically saying that our object is the Identity object transformed by the transformation matrix $M$.
 
 #### Object Matrix Output:
 
@@ -116,13 +116,13 @@ There are two nodes we can use to do the matrix multiplication and those are the
 
 ![Matrix Creation](/images/the-essence-of-animation-nodes-transformation-matrix/create_matrix_nodes.png)
 
-There is multiple nodes we can use to create the transformation matrices and they are as follow:
+There are multiple nodes we can use to create the transformation matrices and they are as follow:
 
 - **Scale, Rotation and Translate Nodes** - They just create a transformation matrix based on their inputs.
 - **Compose Matrix Node** - This node is a combination of the previous three (Their Product). It is worth mentioning that the order of multiplication of its individual transformation is reversed, so it is Scaling>Rotation>Translation. We will soon look at why this order is used and and why it matter.
 
 ***
-Now that you know about transformation matrices and AN nodes, lets get to transforming some objects.
+Now that you know about transformation matrices and AN nodes, let's get to transforming some objects.
 
 ## Example 2.1a
 
@@ -174,11 +174,11 @@ Animation Nodes provide a node that does this pivot change in no time. It is pre
 
 {% include challenge.html content="Try to make use of the other options in the Change Pivot Node" %}
 
-If you are stuck in that challenge, go ahead and check the [Documentation for the node](https://animation-nodes-manual.readthedocs.io/en/latest/user_guide/nodes/matrix/change_matrix_pivot.html), It provide a comprehensive explanation for each of the options.
+If you are stuck in that challenge, go ahead and check the [Documentation for the node](https://animation-nodes-manual.readthedocs.io/en/latest/user_guide/nodes/matrix/change_matrix_pivot.html), It provides a comprehensive explanation for each of the options.
 
 # ID Keys
 
-Lets assume that I have an object and I wanted to move it, what should I do? One might be tempted to think that getting the location of the object through the *Matrix Input node* , multiplying it by a translation transformation matrix and using the *Matrix Output node* to output the new location would work. But this approach wont work, simply because at the next node execution, the new location will become the input location and the object will move forever and ever.
+Let's assume that I have an object and I wanted to move it, what should I do? One might be tempted to think that getting the location of the object through the *Matrix Input node* , multiplying it by a translation transformation matrix and using the *Matrix Output node* to output the new location would work. But this approach won't work, simply because at the next node execution, the new location will become the input location and the object will move forever and ever.
 
 Animation Nodes handled this problem by introducing what is known as an ID key, and based on the documentation:
 
@@ -200,7 +200,7 @@ And now, instead of getting the location of the object from the *Matrix Input no
 
 ### Explanation
 
-This example is what is known as parenting, which you have probably used before. All I do is multiply the initial position of the child or the cylinder (In blender the initial position is the position at which the parenting relation was applied) by the transformation matrix of the father or the cube. That way, the child will copy all the transformations that his father do.
+This example is what is known as parenting, which you have probably used before. All I do is multiply the initial position of the child or the cylinder (In blender the initial position is the position at which the parenting relation was applied) by the transformation matrix of the father or the cube. That way, the child will copy all the transformations that his father does.
 
 ## Example 2.3b
 

@@ -272,7 +272,7 @@ $$
 
 ### Central Finite Difference
 
-The problem about the Forward and Backward difference is that they have a very big error, as the following example illustrate, computing the derivative using both methods produce a very distinct results, they don't even have the same sign!
+The problem about the Forward and Backward difference is that they have a very big error, as the following example illustrate, computing the derivative using both methods produce a very distinct result, they don't even have the same sign!
 
 ![Forward vs Backward](/images/normal-map-generation/forward_vs_backward.svg  "Forward vs Backward")
 
@@ -301,7 +301,7 @@ I will first make a function (a node group) that takes an image and return the $
 
 ![Partial Derivatives Function](/images/normal-map-generation/partial_derivative_function.png "Partial Derivatives Function")
 
-To get the value of the pixel next to the pixel I am computing, I translate the the image by -1 in the x axis (Notice that this is actually the forward part, don't get tricked and think that this is the backward because of the negative sign, The reason for the negative is trivial and doesn't need explanation), to get the pixel on the left, I translate by 1 in the x axis and the same apply for the y derivative.
+To get the value of the pixel next to the pixel I am computing, I translate the the image by -1 in the x axis (Notice that this is actually the forward part, don't get tricked and think that this is backwards because of the negative sign, The reason for the negative is trivial and doesn't need explanation), to get the pixel on the left, I translate by 1 in the x axis and the same apply for the y derivative.
 
 And by applying the equations from $\eqref{1}$ and $\eqref{5}$ we get our final implementation:
 
