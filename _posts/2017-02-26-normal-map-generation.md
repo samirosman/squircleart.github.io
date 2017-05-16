@@ -301,7 +301,7 @@ I will first make a function (a node group) that takes an image and return the $
 
 ![Partial Derivatives Function](/images/normal-map-generation/partial_derivative_function.png "Partial Derivatives Function")
 
-To get the value of the pixel next to the pixel I am computing, I translate the the image by -1 in the x axis (Notice that this is actually the forward part, don't get tricked and think that this is backwards because of the negative sign, The reason for the negative is trivial and doesn't need explanation), to get the pixel on the left, I translate by 1 in the x axis and the same apply for the y derivative.
+To get the value of the pixel next to the pixel I am computing, I translate the the image by -1 in the x axis (Notice that this is the next pixel in the positive direction, the negative sign is there because we are moving the space (image) and not the pixel), to get the pixel on the left, I translate by 1 in the x axis and the same apply for the y derivative.
 
 And by applying the equations from $\eqref{1}$ and $\eqref{5}$ we get our final implementation:
 
