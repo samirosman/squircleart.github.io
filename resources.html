@@ -4,14 +4,11 @@ title: Resources
 ---
 <div class="post-containter">
 {% for resource in site.resources %}
-<div class="post">
-  <img class="post-image" src="{{ resource.image_path }}" alt="{{ resource.title }}"/>
-  <center>
-  <h4>{{ resource.title }}</h3>
-  <a href="{{resource.file_path}}" download>
-  <button class="download-button"><span>Download </span></button>
-  </a>
-  </center>
-</div>
+<a href="{{post.url}}">
+    <div class="post">
+        <img class="post-image" src="{{ resource.image_path }}" alt="{{ resource.title }}"/>
+        <h5>{{ resource.title }}</h5>
+    </div>
+</a>
 {% endfor %}
 </div>
