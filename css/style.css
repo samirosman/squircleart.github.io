@@ -173,13 +173,18 @@ h4 {
     color: #333;
 }
 
-.post-title {
+#post-title2 {
     text-align: center;
     padding-bottom: 10px;
     margin: 10px;
     margin-bottom: 20px;
     border-bottom: 4px solid #e5e5e5;
     border-top: 4px solid #e5e5e5;
+}
+#post-title1 {
+    text-align:center;
+    margin:10px;
+    font-weight: 400;
 }
 
 .post-body img {
@@ -216,11 +221,24 @@ h4 {
 /* Code  */
 
 .post-body code {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    color: #C25;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 1px 2px;
+    font-family: monospace;
+    font-size: 0.8em;
+    tab-size: 4;
+}
+
+.post-body pre code {
     background-color: #333;
     color: #FFF;
     display: block;
     border-radius: 3px;
     padding: 0px 20px;
+    tab-size: 4;
 }
 .highlight .hll { background-color: #49483e }
 .highlight .c { color: #75715e } /* Comment */

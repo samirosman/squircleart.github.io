@@ -5,9 +5,9 @@ layout: default
 <div class="post-body">
   {% assign title-list= page.title | split:':' %}
   {% if title-list.size > 1 %}
-  <h3 style="text-align:center;margin:10px"> {{ title-list| first}}
+  <h3 id="post-title1"> {{ title-list| first}}
   {% endif %}
-  <h1 class="post-title">{{ page.title | split:':' | last }}</h1>
+  <h1 id="post-title2">{{ page.title | split:':' | last }}</h1>
 
   <img src="{{ page.image_path}}">
 
