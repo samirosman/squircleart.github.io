@@ -39,19 +39,21 @@ However, some of your implementation will run very slow and thus be considered a
 
 But let me assure you, we are doing every thing in our disposal to boost the performance of Animation Nodes and there are some ongoing projects to do so.
 
+{% include note.html content="Jacques---AN developer--- already boosted the performance of AN in AN 2.0 tremendously. Recent benchmarks found that it is faster by 200x in maths and 400x faster in number generation." %}
+
 ## The Essence Of Animation Nodes
 
 The essence of Animation Nodes will be a tutorial series of an undefined length to get you going with problem solving using Animation Nodes. And we will do that be giving a handful of examples.
 
 ### A bit of history
 
-Artists started complaining that there is no documentation for Animation Nodes as soon as it was released, So we created the documentation ---Half of the [Documentation](https://animation-nodes-manual.readthedocs.io/en/latest/)  is already up and the rest is already done but not yet reviewed or uploaded, but it should be all there by the end of March.
-After that till now people started to complain about the lack of tutorials. And there was already lots of tutorials already in:
+Artists started complaining that there is no documentation for Animation Nodes as soon as it was released, So we created the [documentation](animation-nodes-manual.readthedocs.io/en/an2/).
+After that till now people started to complain about the lack of tutorials. And there was already lots of tutorials in:
 
 * [Jacques Lucke's youtube channel](https://www.youtube.com/channel/UC5ABAuGEvBMmau-1xJsNw6w)
 * [Jimmy Gunawan blog and youtube channel](blendersushi.blogspot.com)
 
-But that wasn't enough for them either. So in this series I am going to teach you everything you should know to set off on your own and save you a month you would have spent in getting your head around Animation Nodes.
+So in this series I am going to teach you everything you should know to set off on your own and save you a month you would have spent in getting your head around Animation Nodes.
 
 ### How I learned it?
 

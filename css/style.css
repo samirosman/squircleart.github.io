@@ -193,13 +193,16 @@ h4 {
 }
 
 .post-body blockquote {
-    border-left: 10px solid #e1e4e5;
-    padding: 1rem;
+    margin: 0;
+    padding: 1em;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
     background-color: #f3f6f6;
+    border-left: 5px solid #dbdbdb;
 }
 .post-body blockquote p {
     color: #494949;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.45833333;
 }
 .post-body a {
@@ -231,16 +234,23 @@ h4 {
     font-size: 0.8em;
     tab-size: 4;
 }
-
 .post-body pre code {
-    background-color: #333;
+    background-color: #292a2d;
     color: #FFF;
     display: block;
     border-radius: 3px;
     padding: 0px 20px;
     tab-size: 4;
+    overflow-x: scroll;
 }
-.highlight .hll { background-color: #49483e }
+code::-webkit-scrollbar {
+    height: 0.5em;
+}
+code::-webkit-scrollbar-thumb {
+    background-color: #666666;
+    border-radius: 5px;
+}
+.highlight .hll { background-color: #292a2d; }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */

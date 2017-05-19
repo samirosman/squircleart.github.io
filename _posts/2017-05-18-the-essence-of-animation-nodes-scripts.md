@@ -9,14 +9,15 @@ description: In this tutorial, I am going to introduce you to script nodes in An
 
 In this tutorial, I am going to introduce you to script nodes in Animation Nodes and Blender Python API.
 
-You don't have to know python in order to understand this tutorial, however, it is reccomended that you know the basics like I do.
+You don't have to know python in order to understand this tutorial, however, it is recommended that you know the basics like I do.
 
 # Script Node
-Animation Nodes contains a lot of nodes, some nodes process data like *Math* nodes and some others communicates with blender like *Object Transform Output* which tells blender objects are located. More sofesticated node trees can be created using those fundumental nodes that AN provides.
 
-However, you may encounter a situation where you need a feature(node) that is not in Animation Nodes already and you can't create it using provided nodes (Such situations is usually when you try to cummunicate with blender), you have couple of options:
+Animation Nodes contains a lot of nodes, some nodes process data like *Math* nodes and some others communicates with blender like *Object Transform Output* which tells blender objects are located. More sophisticated node trees can be created using those fundamental nodes that AN provides.
 
-- You can contact the developer to see if it can be added in a future release.
+However, you may encounter a situation where you need a feature(node) that is not in Animation Nodes already and you can't create it using provided nodes (Such situations is usually when you try to communicate with blender), you have couple of options:
+
+- You can contact the developer to see if it can be added in a future release. You can do that through [Github issues](https://github.com/JacquesLucke/animation_nodes/issues/new).
 -  You may create a new node, the process of creating new node is described in the [documentation](http://animation-nodes-manual.readthedocs.io/en/an2/dev_guide/index.html).
 -  You may use the script node, which enables you to write python scripts and execute it as a subprogram.
 
@@ -40,7 +41,8 @@ Consequently, input names follow the same rules as Python, that is, the name sho
 The script node will then return the values of the variable `result` which I defined as `x+y`, so the script basically add two numbers and return the result.
 
 # Python API
-There exist a python API (Application Programming Interface) that lets you communicate with blender. To be able to understand the API, lets open the console and see what the `bpy` module (Blender Python API) contains. Using auto comple, blender lists possible choises. `bpy` includes:
+
+There exist a python API (Application Programming Interface) that lets you communicate with blender, it can be found [here](https://docs.blender.org/api/2.78b/). To be able to understand the API, lets open the console and see what the `bpy` module contains. Using auto complete, blender lists possible choices. `bpy` includes:
 
 ~~~python
 
@@ -54,14 +56,14 @@ bpy.
 	types
 	utils
 
-~~~ 
+~~~
 
-When it comes to Annimation Nodes, we are only interseted in `data` and may be `context` for some limited cases:
+When it comes to Animation Nodes, we are only interested in `data` and may be `context` for some limited cases:
 
 - **data** include all the data in the blend file, you can use it to access and write data to blender. For instance, you can write and read pixel data of an image.
-- **context** include data that is represented in current working area. It is access only, you can't write using it. For instance, selected objects are data that is defined in the 3D viewport. Those data are subjected to context limitations, somtimes you won't be able to acces this data unless you are in the right area.
+- **context** include data that is represented in current working area. It is access only, you can't write using it. For instance, selected objects are data that is defined in the 3D viewport. Those data are subjected to context limitations, so sometimes you won't be able to access this data unless you are in the right area. Also, it should only be used when you don't plan to run this script during rendering as this can lead to problems.
 
-Having choosen `data`, lets see what it contains:
+Having chosen `data`, lets see what it contains:
 
 ~~~python
 
@@ -80,7 +82,7 @@ py.data.
 
 ~~~
 
-As you may see, we have all the data types, but we are mostly intersted in `objects` as it include all the data of our objects, `objects` lists all objects in the blend file, you can choose or sample an object by its name or index as follows:
+As you may see, we have all the data types, but we are mostly interested in `objects` as it include all the data of our objects, `objects` lists all objects in the blend file, you can choose or sample an object by its name or index as follows:
 
 ~~~python
 
@@ -144,9 +146,9 @@ Image.pixels = Pixels
 
 In this example, I am writing pixel info to an image. Blender accepts the pixel info as a list of floats with the pattern RGBARGBARGBA.... it means the first float is the red value if the first pixel, second is green for the first pixel, third is blue for the first pixel, fourth is the alpha for the first pixel, fifth is the red value for second pixel, and so on. So, the node expects a float list with length $W \times H \times 4$ where $W,H$ are the width and height of the image respectively.
 
-I generated a list of floats that goes from zero to one with 40000 float because my image is $100 \times 100$. This will produce somekind of vertical-horizontal graident, but lets do something more useful.
+I generated a list of floats that goes from zero to one with 40000 float because my image is $100 \times 100$. This will produce some kind of vertical-horizontal gradient, but lets do something more useful.
 
-{% include note.html content="Notice that we didn't have to import the bpy, thats because it is imported already along with some other modules." %}
+{% include note.html content="Notice that we didn't have to import the bpy, that's because it is imported already along with some other modules." %}
 
 ## Example 3b
 
@@ -172,8 +174,3 @@ In this example, I made it possible to change the width and height of the image.
 - Create a list with the distance in first three elements and 1 in the forth. Because we want to keep alpha at 1 and the result to be a greyscale image for the gradient.
 
 {% include challenge.html content="Can you get the pixel info from another image, edit those info somehow and then write pixels back to an image?" %}
-
-
-
-
-
