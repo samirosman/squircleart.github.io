@@ -74,7 +74,7 @@ Creating the group doesn't execute it and now, it is like it doesn't exist. To a
 So you see that having had 3 paths to check, I didn't have to add the whole node tree for each of them, this made my node tree more organized and even faster, the execution time for this was 0.05ms, hadn't I used groups, it would have been 0.055ms.
 
 # Loops
-Loops iterate fixed number of times running the node tree they contain. Loops are a little bit harder to use but once you use them for once, they will be very easy.
+Loops run fixed number of times running the node tree they contain. Loops are a little bit harder to use but once you use them for once, they will be very easy.
 
 ## Example 4.2a
 
@@ -135,7 +135,7 @@ We have looked at examples where we used the loop to return a list of data, but 
 
 In this example, two things changed, I am no longer controlling the number of iterations and I did not output anything.
 
-We saw that there is a default parameter called Iterations that we can use to control the number of iterations of the loop. Another way to do it is by using a list of data as an iterator, In this case, the number of iterations will be the length of the list and there will be an extra input of the same data type as the iterator list. At the first iteration (at index zero), the extra input will be the first element of the iterator list, at the second iterator (at index one), the extra input will be the second element, ...
+We saw that there is a default parameter called Iterations that we can use to control the number of iterations of the loop. Another way to do it is by using a list of data as an iterator, In this case, the number of iterations will be the length of the list and there will be an extra input of the same data type as the iterator list. At the first iteration (at index zero), the extra input will be the first element of the iterator list, at the second iteration (at index one), the extra input will be the second element, ...
 
 In the example above, I computed the vector that we generated before and used it as the location of each object in my iterator list. We notice that there is no output for the loop, it is a loop that perform and not output.
 
@@ -149,15 +149,31 @@ The above examples takes 2 list and return the maximum element wise.
 
 Multiple list iterators can be used, if they aren't equal in length, the lowest length will be the number of iterations and subsequently, the length of the output list will be the lowest length.
 
-## Example 4.4
+## Example 4.4a
 
-![Example 4.4](/images/the-essence-of-animation-nodes-loops/example_4.4.png)
+![Example 4.4a](/images/the-essence-of-animation-nodes-loops/example_4.4a.png)
 
 ### Explanation
 
 There is a hidden input for generators, it is called the **Condition**. Basically, the generator node asks the condition input every iteration "Should I append the input data to the output list?", The condition responds by saying True (yes include it!) or False (Don't include it).
 
 The above examples shows a program that returns all the numbers that are divisible by 3, in other words, it returns the index iff its remainder in the euclidean division by 3 is zero.
+
+## Example 4.4b
+
+![Example 4.4b](/images/the-essence-of-animation-nodes-loops/example_4.4b.png)
+
+### Explanation
+
+Outputs are vectorized, meaning you can append multiple elements to the output list by plugging in a list that contains the elements. In the above example, I create a list of index and iteration inputs and append them both. The result is a flat list that contains the first three indices each followed by the number of iterations which is equal to 3.
+
+## Example 4.4c
+
+![Example 4.4c](/images/the-essence-of-animation-nodes-loops/example_4.4c.png)
+
+### Explanation
+
+If my output was a generic list and I wanted to append the list as a list object and not append its individual elements, I should convert the list to a generic data type first.
 
 # Parameters
 

@@ -1,8 +1,9 @@
 ---
-title: "The Essence Of Animation Nodes: The system"
+title: 'The Essence Of Animation Nodes: The system'
 layout: post
-image_path: /images/the-essence-of-animation-nodes.png
-description:  "We look at AN's system and the different execution methods as well as errors"
+image_path: "/images/the-essence-of-animation-nodes.png"
+description: We look at AN's system and the different execution methods as well as
+  errors
 category: Animation-Nodes
 ---
 
@@ -13,7 +14,7 @@ options to control this system.
 
 Animation Nodes take the node tree you created and convert it to a python code and then run that code to see the result of your node tree.
 
-There is multiple routines and methods AN can follow to run the code and we are going to look at those options now. And that is using this simple example of a node tree that sum 2 integers and display that result.
+There is multiple routines and methods AN can follow to run the code and we are going to look at those options now. We will use this simple example of a node tree that sum 2 integers and display that result.
 
 ![Example](/images/the-essence-of-animation-nodes-the-system/execution.gif  "Example")
 
@@ -21,9 +22,9 @@ First, you may have noticed that some numbers are changing very rapidly, and thi
 
 ## Execution methods:
 
-By default, Auto execution is enabled, which does what it says, it automatically executes the node tree based on a specific rules you specify. and those rules are specified in the panel which include:
+By default, Auto execution is enabled, which does what it says, it automatically executes the node tree based on specific rules you specify. and those rules are specified in the panel which include:
 
-### Always:
+#### Always:
 
 It is enabled by default and it constantly and successively runs the node tree in spite of the context and space you are in or using.
 
@@ -32,9 +33,9 @@ This option is accompanied by a property called **Min Time Difference** which is
 This option consumes the CPU and thus it slow down every other process that is taking place, and you might notice blender lagging because of this.
 
 It doesn't really make sense to keep running the node tree even if you aren't changing anything in it.
-So you really shouldn't be using that node except for some limited situations which is the situation where all other options fails to do the job that it is required to do, and we will give an example for that at the end.
+So you really shouldn't be using that node except for some limited situations which is the situation where all other options fails, and we will give an example for that at the end.
 
-### Tree Changed:
+#### Tree Changed:
 
 This option will run the node tree whenever you add or remove a node to the current node tree.
 
@@ -44,7 +45,7 @@ And this is probably why you should enable it after disabling **Always** because
 
 Notice how the time changed (which means AN runs) when I added another node.
 
-### Frame Changed:
+#### Frame Changed:
 
 This option runs the node tree whenever the current frame change.
 
@@ -56,7 +57,7 @@ Animation Nodes won't know that the frame changes unless you tell it to watch fo
 
 Notice how the node tree runs whenever the frame change.
 
-### Property Changed:
+#### Property Changed:
 
 This option runs the node tree whenever you change a value inside a node manually. If you plugged the time info node to one of the inputs and played the animation the node tree won't update because you have to manually edit the inputs.
 
@@ -66,7 +67,7 @@ And this is also probably why you should enable it after disabling **Always** be
 
 Notice how the node tree runs whenever I change a value.
 
-### Triggers:
+#### Triggers:
 
 Now you might be wondering, what if we wanted to run the node tree if an external property other than the frame changed. For instance, the location of an object, its draw options, or even its name.
 
@@ -78,7 +79,7 @@ Lets look at an example where we are to watch for a change in an object's locati
 
 ![Triggers](/images/the-essence-of-animation-nodes-the-system/triggers.gif  "Triggers")
 
-You can see that I added a trigger that watch for a change in an object property and chose the object to watch---Cube---and typed the **Data Path** for the property I want to watch for, in this case it was *"location"*.
+You can see that I added a trigger that watch for a change in an object property and chose the object to watch and typed the **Data Path** for the property I want to watch for, in this case it was `location`.
 
 To get the data path for any object property, just hover it and press <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd> which will copy the *ID Data Path* for that property which you can then paste into the field for the data path.
 
@@ -123,11 +124,9 @@ bpy.data.objects["Cube"].modifiers["Subsurf"].levels
 
 Always is what I consider a last resort for most of the applications, when everything fails to make the running at the right time, I use always.
 
-Consider the scenario where we have tenths of objects that we are using the location of each one in our node tree, adding a trigger for every object will be a tedious and inefficient job, So we use **Always** in this situation instead.
+Consider the scenario where we have tenths of objects that we use their location in our node tree, adding a trigger for every object will be a tedious and inefficient job, So we use **Always** in this situation instead.
 
 Another situation where **Always** is in fact a very good solution is simulations and especially ones that are iterative like PDEs where I want to see the simulation in real time and let it run as fast as possible.
-
-You may also witness some speed up when using **Always** which I have noticed during my work, but I am not entirely sure if this is an actual thing.
 
 ### Manual Execution:
 
@@ -164,5 +163,3 @@ They stop the whole node tree from executing and won't run till you fix them. So
 They happen due to an error in the python code of the nodes itself which probably happens when you try to do something with the node that the developers didn't consider, but AN is smart and avoids almost all of those complications. This may also happen when you try to code something yourself that isn't really right.
 
 AN will display a red border and stop executing and tells you to report this bug to the developers, because it is probably is, so report when ever this happens to you.
-
-I don't really have an example now to show you how it happen or how to fix it, but we may encounter some of these on our way. So don't worry, I will show you a fatal error before we finish this series.

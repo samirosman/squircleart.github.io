@@ -1,8 +1,8 @@
 ---
-title: "The Essence Of Animation Nodes: Preface"
+title: 'The Essence Of Animation Nodes: Preface'
 layout: post
-image_path: /images/the-essence-of-animation-nodes.png
-description:  "We talk about Animation Nodes and get ready to start the tutorial series"
+image_path: "/images/the-essence-of-animation-nodes.png"
+description: We talk about Animation Nodes and get ready to start the tutorial series.
 category: Animation-Nodes
 ---
 
@@ -21,7 +21,7 @@ Animation Nodes is a complete **Framework** for creating almost everything in bl
 
 The previous applications is as far as artists are concerned. However, some people like TDs such as myself are interested in more advanced applications and uses for Animation Nodes which yield some interesting tools that artists can use.
 
-**Engineers**, **Scientists**, **Mathematician** and **Students** like to have a *Numerical computing software* such as [Matlab](https://en.wikipedia.org/wiki/MATLAB)  or [Octave](https://en.wikipedia.org/wiki/GNU_Octave)  which is basically a program that provides them with tools to do *Numerical analysis*, *Statistical studies*, *Plotting*, etc.
+*Engineers*, *Scientists*, *Mathematician* and *Students* like to have a *Numerical computing software* such as [Matlab](https://en.wikipedia.org/wiki/MATLAB)  or [Octave](https://en.wikipedia.org/wiki/GNU_Octave)  which is basically a program that provides them with tools to do *Numerical analysis*, *Statistical studies*, *Plotting*, etc.
 Being a student myself, I didn't really need any of these programs because Animation Nodes was more than sufficient for my study.
 
 ### What can be done?
@@ -62,7 +62,7 @@ Obviously I had to learn the basics somewhere and that was **Jacques's** and **J
 You see, The nodes itself doesn't really need an explanation. For instance, the **Vector Distance node**:  what do you think it does?
 Yep you guessed it, It return the distance between 2 vectors and the inputs are 2 vectors and the output is the distance. But again there is the documentation, so if something wasn't that clear, there is no shame in looking at it.
 
-Some other nodes like the **Barycentric Transformation** node are may be hard to figure out what it does, but this isn't a lack of information about what the node does, It is a lack of information on your side. Because barycentric transformation is a mathematical operator that if you understand you will understand the node, and understanding that operator is as easy as a googling the name. But we also included a small demonstrations and illustrations that explains the underlying mathematical concepts behind nodes.
+Some other nodes like the **Barycentric Transformation** node are may be hard to figure out what they does, but this isn't a lack of information about what the node does, It is a lack of information on your side. Because barycentric transformation is a mathematical operator that if you understand you will understand the node, and understanding that operator is as easy as a googling the name. But we also included a small demonstrations and illustrations that explains the underlying mathematical concepts behind nodes.
 
 ### What will we be doing?
 
@@ -80,39 +80,10 @@ So every once in a while, you will find some thing like this:
 
 {% include challenge.html content="This is a challenge I give to apply for what you have learned and gain experience." %}
 
-The challenges will be relatively easy and related to the subject we are studying, however, if you couldn't do the challenge yourself, just wait for the implementation that will be done every once in a while for the previous challenges.
-
 ## Acknowledgement
 
 I want to specifically thank:
 
 * **Jacques Lucke** - The creator of Animation Nodes, I really hope he get to be a blender developer because he will make the software Awesome. (As if he haven't already)
 * **Jimmy Gunawan** - A first class noder who helped me when I started and a guy who has the creativity do cool procedural stuff using nodes everyday!
-* **Friends** - Who gave me challenges to improve myself
 
-## Getting Ready
-
-Enough talking for now. Lets start making.
-
-Obviously we will need Animation Nodes, Blender and some python modules to do anything.
-
-### Installing Animation Nodes
-
-*  Download and Install blender from [here](https://www.blender.org/download/).
-
-*   Clone Animation Nodes to your blender addons directory:
-
-In linux:
-
-~~~python
-
-cd "Your blender addons directory"
-git clone "https://github.com/JacquesLucke/animation_nodes.git"
-
-~~~
-
-{% include note.html content="Make sure to have installed git first ." %}
-
-* Install numpy python module from your package manager or Pip or other methods if you don't have it.
-
-{% include note.html content="At the time of making this series, Animation nodes 1.6 was used" %}

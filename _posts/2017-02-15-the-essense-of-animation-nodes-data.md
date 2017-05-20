@@ -1,14 +1,12 @@
 ---
-title: "The Essence Of Animation Nodes: Data"
+title: 'The Essence Of Animation Nodes: Data'
 layout: post
-image_path: /images/the-essence-of-animation-nodes.png
-description:  "We talk about how data is handled in Animation Nodes"
+image_path: "/images/the-essence-of-animation-nodes.png"
+description: We talk about how data is handled in Animation Nodes
 category: Animation-Nodes
 ---
 
-We said in the previous tutorial that our node tree will be converted into a python code which can then be executed and this means that AN is some how related to how python works, so we will look at some of the properties of that system.
-
-We will also look at data types and how it is handled in AN.
+We said in the previous tutorial that our node tree will be converted into a python code which can then be executed and this means that AN is some how related to how python works, so we will look at some of the properties of that system. We will also look at data types and how it is handled in AN.
 
 # AN Data
 
@@ -31,8 +29,6 @@ Python (Which AN is built on) is an **Object Oriented Programming Language** and
 In the old days of programming, programmers and programming languages were more concerned about the actions and operations that can be applied to data, however that changed when OOP was introduced.
 
 OOP concentrated on the data itself and tried to model data as a real life objects that have properties and abilities, and the concept of objects was then introduced which made programs more efficient, easier to program and easier to understand.
-
-But objects introduced problems as well, and we are going to talk about that later. In fact, I am telling you this because we are going to visit it later and see how objects made our life harder for some projects.
 
 #### The Vector Object
 
@@ -72,29 +68,7 @@ There is a feature in AN that let you visualize data copies and that is **Color 
 
 You can see that the upper Create node is colored in red and that is because there is 2 nodes editing its data and thus it copied the data to keep it intact for the other user.
 
-### Performance Mode
-
-There is also a feature in AN that allow you to control the copying of data, So for instance, I can prevent a node from copying data even though it met the conditions Jacques described above.
-
-![Performance Mode](/images/the-essence-of-animation-nodes-data/performance.png  "Performance Mode")
-
-I changed to the performance panel and disabled the copying of the input **List** which is our float list for both *Remove nodes*.
-
-Did you notice what happened? The upper *Remove node* didn't copy the data and just edited it directly and removed the number 1. The lower *Remove node* didn't copy the data either and edited the list that was originally edited by the upper node, and the consequences? The lower node has no accurate output since I told it to only remove the number 2 but 1 was removed as well.
-
-It is called performance because when you are not copying you are boosting the performance of the node tree.
-
-But you don't really need such a feature to optimize the performance of your node tree because AN already do that in the background, As Jacques said:[^1]
-
-> You really don't need this. AN should be able to optimize itself in that regard. When you try to optimize performance, you should look somewhere else. I will remove/hide that "feature".
-
-And we will talk about optimizing the node tree in a later tutorial.
-
-***
-
 ## Data Types
-
-I think we said enough about data although I wanted to talk about another topic which is **Data Creator and Owner**. The type of objects we create are either Python, Blender or AN objects and treating one as a different one may cause unexpected outcome or may not work at all. But I don't really have much information about that now, so we are going to leave it and visit it later.
 
 Data types are straightforward and don't really need explanation, but if you stumbled upon a data type related problem, visit the documentation. [Here](https://animation-nodes-manual.readthedocs.io/en/latest/dev_guide/socket_types.html) is a list of data types and some of its properties.
 
@@ -102,30 +76,19 @@ There is a special data type I want to talk about though.
 
 ### Generic Data Type
 
-Generic data type accept any type of data including lists and can store different types of data in the same list. But here comes the problem of identifying the data when I want to get them. To understand this, let's look at the following example:
+Generic data type accept any type of data including lists. This is useful when it comes to making nested lists, that is, lists that include lists.
 
-![Layered List](/images/the-essence-of-animation-nodes-data/double-lists.png  "Layered List")
+![Generic](/images/the-essence-of-animation-nodes-data/generic.png)
 
-As you can see, I created a generic list that contain 2 different lists, then I went on to get the first element of the list which is the integer list.
+Notice that the generic list contains two float lists.
 
-Now I want to get the first element in the first element of the generic list which is the number 1 in the integer list.
-But I can't because every time I plug the element (integer list) into the second get list element node it is like:
+### Converter Node
 
-**Get Node:** "I want a list so that I get you an element, don't give me a non-list !"
+Converter node is a little node that can convert any data type into any other data type. It is usually used with the generic data type to convert it to its original data type. So in the previous example, if we sampled the first element, the output will be a generic data, to be able to use the float list in a math node, you have to convert it from generic to a float list. To convert it to a float list we can use the converter node:
 
-**Me:** "Trust me, it is a list but you can't see it well"
+![Converter](/images/the-essence-of-animation-nodes-data/convert_node.png)
 
-**Get Node:** "No it is not, get me a list"
-
-No matter how hard you try convince it that the input is actually a list, it just wont listen and that's where the **Convert Node** come to the rescue.
-
-The Convert node is a little cute node that have the ability to convince a node that a data is another type of data, and it is usually used with the generic data type.
-
-That node is a passive node that is usually added automatically in some cased but you can add it from the search menu.
-
-![Convert Node](/images/the-essence-of-animation-nodes-data/convert.png  "Convert Node")
-
-Look how this cutie managed to convince the Get guy that the input was actually a list.
+We first choose the type we want to convert to, which in this case was a float list, then we lock it using the lock button, this will make sure the node won't convert the output data type automatically because it can. Then we use its float list output as we please.
 
 ***
 ***

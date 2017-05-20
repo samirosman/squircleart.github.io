@@ -164,18 +164,6 @@ You could try to understand it as a local/global transformation as in the previo
 
 Thats how you understand matrix transformations, you carefully break it into smaller actions and follow it.
 
-## Example 2.2c
-
-![Example 2.2c](/images/the-essence-of-animation-nodes-transformation-matrix/example_2.2c.gif)
-
-### Explanation
-
-Animation Nodes provide a node that does this pivot change in no time. It is pretty much explanatory.
-
-{% include challenge.html content="Try to make use of the other options in the Change Pivot Node" %}
-
-If you are stuck in that challenge, go ahead and check the [Documentation for the node](https://animation-nodes-manual.readthedocs.io/en/latest/user_guide/nodes/matrix/change_matrix_pivot.html), It provides a comprehensive explanation for each of the options.
-
 # ID Keys
 
 Let's assume that I have an object and I wanted to move it, what should I do? One might be tempted to think that getting the location of the object through the *Matrix Input node* , multiplying it by a translation transformation matrix and using the *Matrix Output node* to output the new location would work. But this approach won't work, simply because at the next node execution, the new location will become the input location and the object will move forever and ever.
