@@ -74,7 +74,7 @@ for i, color in enumerate(colors):
 
 The `for` loop basically loop over the colors in my color list and assign them to loops. The python operator `enumerate` assign the index of of the iterator (color) to the variable `i`. So `i` in the first iteration will be 0, second will be 1, third will be 2, and so on.
 
-Since our color list is a nested list, that is, it is a list that include smaller lists and since AN doesn't support nested lists or multidimensional arrays, we will have to use techniques described in [Converter Node](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-data.html#converter-node) and [Vectorized Loop Outputs](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html#example-44c), so make sure yo understand them well before continuing.
+Since our color list is a nested list, that is, it is a list that include smaller lists and since AN doesn't support nested lists or multidimensional arrays, we will have to use techniques described in [Converter Node](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-data.html#converter-node) and [Vectorized Loop Outputs](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-loops.html#example-44c), so make sure yo understand them well before continuing.
 
 ## Example 1
 

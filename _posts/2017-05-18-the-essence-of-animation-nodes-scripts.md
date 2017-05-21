@@ -21,9 +21,9 @@ However, you may encounter a situation where you need a feature(node) that is no
 -  You may create a new node, the process of creating new node is described in the [documentation](http://animation-nodes-manual.readthedocs.io/en/an2/dev_guide/index.html).
 -  You may use the script node, which enables you to write python scripts and execute it as a subprogram.
 
-## Example 1
+## Example 6.1
 
-![Example1](/images/the-essence-of-animation-nodes-scripts/example1.png)
+![Example1](/images/the-essence-of-animation-nodes-scripts/example_6.1.png)
 
 ### Demonstration
 
@@ -121,9 +121,9 @@ color[3]   #Alpha value
 
 You probably get it by now, to access some data, we carefully follow its location in the `data` section of the API.
 
-## Example 2
+## Example 6.2
 
-![Example2](/images/the-essence-of-animation-nodes-scripts/example2.gif)
+![Example2](/images/the-essence-of-animation-nodes-scripts/example_6.2.gif)
 
 ### Demonstration
 
@@ -131,9 +131,9 @@ Scripts node are not always needed, if your script can be written inline, then u
 
 {% include note.html content="Notice that the output of the node is not actually a color data type, so I disabled auto type correction and output it as if it was a color after the output was converted to a color. This is a bad practice, but it works sometimes." %}
 
-## Example 3a
+## Example 6.3a
 
-![Example3a](/images/the-essence-of-animation-nodes-scripts/example3a.png)
+![Example3a](/images/the-essence-of-animation-nodes-scripts/example_6.3a.png)
 
 ~~~python
 
@@ -150,10 +150,10 @@ I generated a list of floats that goes from zero to one with 40000 float because
 
 {% include note.html content="Notice that we didn't have to import the bpy, that's because it is imported already along with some other modules." %}
 
-## Example 3b
+## Example 6.3b
 
-![Example3b](/images/the-essence-of-animation-nodes-scripts/example3b.png)
-![Example3b](/images/the-essence-of-animation-nodes-scripts/example3b.gif)
+![Example3b](/images/the-essence-of-animation-nodes-scripts/example_6.3b.png)
+![Example3b](/images/the-essence-of-animation-nodes-scripts/example_6.3b.gif)
 
 ~~~python
 
