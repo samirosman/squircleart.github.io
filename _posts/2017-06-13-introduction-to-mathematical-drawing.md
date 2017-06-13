@@ -10,15 +10,15 @@ description: We previously learned how to plot function to generate shapes provi
 
 We previously learned how to plot function to generate shapes provided we have the equation for it. In this tutorial, we are going to learn to create our own functions to draw shapes and patterns.
 
-It is reccomnded that you read [Introduction To Texture Mapping](https://squircleart.github.io/shading/introduction-to-texture-mapping.html) , [Value Remapping](https://squircleart.github.io/math/value-remapping.html) and  [Introduction To Functions Plotting](https://squircleart.github.io/shading/introduction-to-functions-plotting.html) first because this post highly depend on it.
+It is recommend that you read [Introduction To Texture Mapping](https://squircleart.github.io/shading/introduction-to-texture-mapping.html) , [Value Remapping](https://squircleart.github.io/math/value-remapping.html) and  [Introduction To Functions Plotting](https://squircleart.github.io/shading/introduction-to-functions-plotting.html) first because this post highly depend on it.
 
 ## Generating Heart Function
 
 ![Heart](/images/introduction-to-mathematical-drawing/heart.svg)
 
-A heart is a famouse curve and it makes a perfect example for us because it has sharp corners, round edges and pinches. There is multiple ways to do this and usually you have two approaches to solve this problem:
+A heart is a famous curve and it makes a perfect example for us because it has sharp corners, round edges and pinches. There are multiple ways to do this and usually you have two approaches to solve this problem:
 
-1. Combine multiple simple known functions. For instance, one might notice that the top half of the heart is two circles and the lower half is a triangle with some slight defomation, since we know the equations of circles and triangles, we could compute every one separatly and then combine them. This is the easier approach and it is not the most efficient so we are not going to use it.
+1. Combine multiple simple known functions. For instance, one might notice that the top half of the heart is two circles and the lower half is a triangle with some slight deformation, since we know the equations of circles and triangles, we could compute every one separatly and then combine them. This is the easier approach and it is not the most efficient so we are not going to use it.
 2. Find the closest known shape to you and iteratively deform it till you get the desired shape. For instance, the heart is kinda round, so I choose the closest shape I know, for me it is a circle, I then notice that the top middle of the heart is indented inward so I somehow deform the circle in order to get the indentation and so on. This is the most efficient method but also the hardest. Artists may love this method because it is just about creative thinking.
 
 So lets start making the heart using the second approach !
@@ -33,7 +33,7 @@ Ok, step one was very easy, lets move on.
 
 ### Step 2
 
-Create the upper indentation. Those deformation in functions can be done by destorting the coordinates plane of our drawing. We know that in order to translate a point, we have to add a vector to it, well, the indentation can be made by translating the points in the middle a bit downward (Or possibly translate the surrounding upward), that is, for the later, we should subtract from the y coordinates an $f(x)$ that is small as $x$ is small and graually increases. Well, we are describing the most known function in the universe, it is $f(x)=x$, as $x$ increases $f(x)$ increases. However,  negative $x$ would render $f(x)$ negative as well which would render our subtraction an addition, and our points will move in the other direction and our heart is symetrical so we don't want that. To fix this, we have to make sure $f(x)$ is always positive, and I happened to know the function that guarantee this, it is $f(x)=\vert x \vert$. Now, we want to have some more control over this function, we want to define how much we translate by, so lets introduce a scalar $\alpha$ that defines the slope of the linear function we have, that is, $f(x)= \alpha \vert x \vert$. So lets try this out.
+Create the upper indentation. Those deformation in functions can be done by distorting the coordinates plane of our drawing. We know that in order to translate a point, we have to add a vector to it, well, the indentation can be made by translating the points in the middle a bit downward (Or possibly translate the surrounding upward), that is, for the later, we should subtract from the y coordinates an $f(x)$ that is small as $x$ is small and gradually increases. Well, we are describing the most known function in the universe, it is $f(x)=x$, as $x$ increases $f(x)$ increases. However,  negative $x$ would render $f(x)$ negative as well which would render our subtraction an addition, and our points will move in the other direction and our heart is symmetrical so we don't want that. To fix this, we have to make sure $f(x)$ is always positive, and I happened to know the function that guarantee this, it is $f(x)=\vert x \vert$. Now, we want to have some more control over this function, we want to define how much we translate by, so lets introduce a scalar $\alpha$ that defines the slope of the linear function we have, that is, $f(x)= \alpha \vert x \vert$. So lets try this out.
 
 ![Step2](/images/introduction-to-mathematical-drawing/step2.png)
 
@@ -41,7 +41,7 @@ Lucky we are, the lower part moved up as well creating a sharp corner. If we did
 
 ### Step 3
 
-We said that our second approach is iterative, so we have to constantly improve what we did in the previouse step. The biggest problem I want to solve is the non roundness of the upper part of the heart. Since our equation was linear, the result isn't too round. To fix this, we have to edit our equation a bit to make it more smooth and not so linear. What do you think? How should we handle this? I happened to know a function that takes a linear function and makes it round, that function is the squar root !
+We said that our second approach is iterative, so we have to constantly improve what we did in the previous step. The biggest problem I want to solve is the non roundness of the upper part of the heart. Since our equation was linear, the result isn't too round. To fix this, we have to edit our equation a bit to make it more smooth and not so linear. What do you think? How should we handle this? I happened to know a function that takes a linear function and makes it round, that function is the square root !
 
 ![Square Root](/images/introduction-to-mathematical-drawing/square_root.svg)
 
@@ -77,7 +77,7 @@ $$
 
 $$
 
-Where $a$, $b$ are scalling factors for the superellipse and $n$ is a positive number. Try to plot a squircle and you will notice that it doesn't look nice, it is not a really a round cornder rectangle. So lets find a real function that describe it.
+Where $a$, $b$ are scalling factors for the superellipse and $n$ is a positive number. Try to plot a squircle and you will notice that it doesn't look nice, it is not a really a round corner rectangle. So lets find a real function that describe it.
 
 ### Step 1
 
@@ -85,7 +85,7 @@ Find the closest known shape. Well, since my corners are actually quarters of a 
 
 ![2 Step1](/images/introduction-to-mathematical-drawing/2step1.png)
 
-Notic that I haven't use any inequality operation yet because I want you to observe what happens to the distance field we have as we proceed.
+Notice that I haven't use any inequality operation yet because I want you to observe what happens to the distance field we have as we proceed.
 
 ### Step 2
 
@@ -105,7 +105,7 @@ This doesn't look good, why is resulted values different even though we saw they
 
 ### Step 3
 
-When we subtracted some values became negative but they were rendered black anyway, what we have to do is to make sure negative values are replace with zero. This can be done by the clamp option or a maximum operation. So lets check clamp.
+When we subtracted some values became negative but they were rendered black anyway, what we have to do is to make sure negative values are replaced with zero. This can be done by the clamp option or a maximum operation. So lets check clamp.
 
 ![2 Step3](/images/introduction-to-mathematical-drawing/2step3.png)
 
@@ -137,7 +137,7 @@ I will first create a rectangle which will act as the base for my sea of wave.
 
 Waves are just alternating an upward displacement and an inward displacement. So we will need a function that describe this repeated displacement and add it to our coordinates plane.
 
-The function we want is just the modulo arthmetic which we use multiple times before so no need to explain it.
+The function we want is just the modulo arithmetic which we use multiple times before so no need to explain it.
 
 ![3 Step2a](/images/introduction-to-mathematical-drawing/3step2a.png)
 
@@ -187,7 +187,7 @@ Start with a circle !
 
 ### Step 2
 
-Spikes are much like the waves we did, but they are radially distributed, so we shall use another coordinates system, that is, the polar coordinates. Applying the modulo function to the angle of the polat system instead of the $x$ of the rectangular coordinates would yield:
+Spikes are much like the waves we did, but they are radially distributed, so we shall use another coordinate system, that is, the polar coordinates. Applying the modulo function to the angle of the polar system instead of the $x$ of the rectangular coordinates would yield:
 
 ![4 Step1a](/images/introduction-to-mathematical-drawing/4step1a.png)
 
@@ -203,6 +203,6 @@ Our initial step 2 made use of multiplication in rectangular coordinates. Anothe
 
 ![4 Step1a](/images/introduction-to-mathematical-drawing/4step1b2.png)
 
-Nice results we got here. Initial method can be reprocued by remapping the $\theta$ function.
+Nice results we got here. Initial method can be reproduced by remapping the $\theta$ function.
 
 I hope you learned something today. I think it is time to end this post and carry on in another. Stay tuned.
