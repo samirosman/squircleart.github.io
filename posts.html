@@ -4,11 +4,9 @@ title: Posts
 ---
 <div class="post-containter">
 {% for post in site.posts %}
-    <a href="{{post.url}}">
-        <div class="post">
-            <img class="post-image" src="{{ post.image_path }}" alt="{{ post.title }}"/>
-            <h5>{{ post.title }}</h5>
-        </div>
-    </a>
+  <a  class="post" href="{{post.url}}">
+    <img class="post-image" src="{{ post.image }}" alt="{{ post.title }}"/>
+    <h5>{{ post.title }}</h5>
+  </a>
 {% endfor %}
 </div>

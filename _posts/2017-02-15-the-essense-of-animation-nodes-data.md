@@ -1,7 +1,7 @@
 ---
 title: 'The Essence Of Animation Nodes: Data'
 layout: post
-image_path: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes.png"
 description: We talk about how data is handled in Animation Nodes
 category: Animation-Nodes
 ---

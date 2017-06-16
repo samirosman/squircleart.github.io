@@ -2,7 +2,7 @@
 title: Introduction To Functions Plotting
 layout: post
 category: Shading
-image_path: "/images/introduction-to-functions-plotting/wall.png"
+image: "/images/introduction-to-functions-plotting/wall.png"
 description: Procedural drawing and texturing is all about plotting and editing mathematical
   functions, in this tutorial, we are going to learn how to plot all sorts of mathematical
   functions in blender.

@@ -1,7 +1,7 @@
 ---
 title: 'The Essence Of Animation Nodes: The system'
 layout: post
-image_path: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes.png"
 description: We look at AN's system and the different execution methods as well as
   errors
 category: Animation-Nodes

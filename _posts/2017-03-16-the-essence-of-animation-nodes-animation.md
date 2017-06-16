@@ -1,7 +1,7 @@
 ---
 title: 'The Essence Of Animation Nodes:  Animation'
 layout: post
-image_path: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes.png"
 description: Animation Nodes is a master when it comes to animation in blender. So
   we shall give some examples on animating using AN, we shall look a fcurves and interpolations
   as well.

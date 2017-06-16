@@ -2,7 +2,7 @@
 title: Value Remapping
 layout: post
 category: Math
-image_path: "/images/value-remapping/wall.png"
+image: "/images/value-remapping/wall.png"
 description: Remapping values from an interval to another is one of the most important
   math concepts you have to be familiar with when it comes to CG, in this tutorial,
   we are going to discuss and explain values remapping.

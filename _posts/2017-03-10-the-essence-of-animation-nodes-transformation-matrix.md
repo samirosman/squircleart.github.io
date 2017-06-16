@@ -1,7 +1,7 @@
 ---
 title: 'The Essence Of Animation Nodes: Transformation Matrix'
 layout: post
-image_path: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes.png"
 description: Matrices are one of the data types that you will be using a lot in Animation
   Nodes, however, not everybody uses it because it is a little bit confusing and hard
   to understand, So we will take a look at them now.

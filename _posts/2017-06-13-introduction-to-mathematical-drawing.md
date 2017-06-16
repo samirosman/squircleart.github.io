@@ -2,7 +2,7 @@
 title: Introduction To Mathematical Drawing
 layout: post
 category: Shading
-image_path: "/images/introduction-to-mathematical-drawing/wall.png"
+image: "/images/introduction-to-mathematical-drawing/wall.png"
 description: We previously learned how to plot function to generate shapes provided
   we have the equation for it. In this tutorial, we are going to learn to create our
   own functions to draw shapes and patterns.

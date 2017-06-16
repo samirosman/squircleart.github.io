@@ -5,7 +5,7 @@ category: Shading
 description: Artists tend to use UVs to perform texture mapping even if it is not
   needed; because this saves them the trouble of doing math. In this tutorial, I am
   going to teach you how texture mapping works aside from UV mapping.
-image_path: "/images/introduction-to-texture-mapping/wall.png"
+image: "/images/introduction-to-texture-mapping/wall.png"
 ---
 
 Artists tend to use UVs to perform texture mapping even if it is not needed; because this saves them the trouble of doing math, but this is not how we face our problems, we solve problems using the most efficient way and not the easier way.

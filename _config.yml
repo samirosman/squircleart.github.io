@@ -6,5 +6,19 @@ highlighter: rouge
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
 
 permalink: none
+
+title       : Squircle Art
+description : Squircle Art is a place where I share my ideas, write tutorials and provide resources.
+url         : squircleart.github.io
+twitter     :
+  username: omarsquircleart
+social:
+  name: Omar Ahmad
+  links:
+    - https://twitter.com/omarsquircleart
+    - https://www.facebook.com/OmarSquircleArt
+    - https://github.com/OmarSquircleArt
+google_site_verification : exyIY6Gbzwd1hTG4ihYxzcw7xvSaBcAqXn64UFqcoyE

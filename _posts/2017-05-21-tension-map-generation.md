@@ -2,7 +2,7 @@
 title: Tension Map Generation
 layout: post
 category: Animation-Nodes
-image_path: "/images/tension-map-generation/wall.png"
+image: "/images/tension-map-generation/wall.png"
 description: In this tutorial, I am going to teach how to generate tension maps in
   blender using Animation Nodes.
 ---
