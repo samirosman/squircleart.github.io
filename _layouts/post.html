@@ -12,8 +12,10 @@ layout: default
   <img src="{{ page.image}}">
 
   {{content}}
-
 </div>
+
+{% include new_comment.html %}
+
 <h2 id="other-posts"> More Posts </h2>
 <div class="post-containter" style="padding-top: 0;">
   {% if page.previous.url %}

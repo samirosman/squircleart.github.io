@@ -1,0 +1,17 @@
+comments:
+  allowedFields: ["message", "name", "email", "url"]
+  branch: "master"
+  commitMessage: "A new comment was submitted!"
+  filename: "comment-{@timestamp}"
+  format: "yaml"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
+  moderation: true
+  name: "squircleart.github.com"
+  path: "_data/comments/{options.slug}"
+  requiredFields: ["message", "name"]
+  transforms:
+    email: md5
