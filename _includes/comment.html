@@ -1,0 +1,7 @@
+<div id="comment{{ include.index }}" class="comment-container">
+  <img class="comment-avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=50" alt="{{ include.name }}" height="50" width="50">
+  <h4 class="comment-name"> {{ include.name }} </h4>
+  <time class="comment-time">{{ include.date | date: "%B %d, %Y at %I:%M %p" }}</time>
+  <div class="comment-message"> {{ include.message | markdownify }} </div>
+  <hr>
+</div>

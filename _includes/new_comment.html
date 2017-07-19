@@ -1,6 +1,5 @@
-<div class="comment-container">
-    <form id="comment-form" class="comment-form" method="POST" action="https://api.staticman.net/v2/entry/SquircleArt/squircleart.github.io/master">
-      <p> This is still a test, please don't post any comments </p>
+<div class="new-comment-container">
+    <form id="comment-form" class="new-comment-form" method="POST" action="https://api.staticman.net/v2/entry/SquircleArt/squircleart.github.io/master">
       <h4>LEAVE A COMMENT</h4>
       <fieldset>
         <label for="comment-form-message">Comment<sup>*</sup><small>(Markdown is supported)</small></label>
@@ -11,18 +10,14 @@
         <input type="text" id="comment-form-name" name="fields[name]" tabindex="2" />
       </fieldset>
       <fieldset>
-        <label for="comment-form-email">Email Address<small> (Optional)</small></label>
+        <label for="comment-form-email">Email Address<sup>*</sup></label>
         <input type="email" id="comment-form-email" name="fields[email]" tabindex="3" />
-      </fieldset>
-      <fieldset>
-        <label for="comment-form-url">Website<small> (Optional)</small></label>
-        <input type="url" id="comment-form-url" name="fields[url]" tabindex="4"/>
       </fieldset>
       <fieldset class="hidden" style="display:none;">
         <input type="hidden" name="options[slug]" value="{{ page.slug }}">
       </fieldset>
       <p class="hidden js-notice">
-          <span class="js-notice-text"></span>
+        <span class="js-notice-text"></span>
       </p>
       <fieldset>
         <button type="submit" id="comment-form-submit" tabindex="5">Submit Comment</button>

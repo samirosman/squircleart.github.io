@@ -326,13 +326,13 @@ code::-webkit-scrollbar-thumb {
 
 /* Comments */
 
-.comment-container {
+.new-comment-container {
   text-align: center;
   padding: 3% 10% 3% 10%;
   background-color: #f9f9f9;
   border-top: solid 3px #dcdcdc;
 }
-.comment-form {
+.new-comment-form {
   background-color: #ededed;
   margin : 0 auto;
   text-align: center;
@@ -340,7 +340,7 @@ code::-webkit-scrollbar-thumb {
   border-radius: 5px;
   padding: 5%;
 }
-.comment-form h4 {
+.new-comment-form h4 {
   font-weight : 400;
   padding: 10px;
   margin: 0;
@@ -398,8 +398,92 @@ fieldset button {
 fieldset button:hover {
   background-color: #e25b5b;
 }
-fieldset button:active {
-  border-bottom: 0px solid #b56363;
+.js-notice-text {
+  font-weight: 300;
+}
+.comments-container {
+  padding: 3% 10% 3% 10%;
+  background-color: #f9f9f9;
+}
+.comment-container {
+  width: 100%;
+}
+.comment-container hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.comment-container .comment-message {
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+.comment-container .comment-avatar {
+  float: left;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.comment-container .comment-name {
+  margin-bottom: 3px;
+  margin: 0;
+}
+.comment-container .comment-time {
+  font-size: 0.7em;
+}
+.comment-message img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.comment-message blockquote {
+    margin: 0;
+    padding: 1em;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    background-color: #f3f6f6;
+    border-left: 5px solid #dbdbdb;
+}
+.comment-message blockquote p {
+    color: #494949;
+    font-size: 1.1em;
+    line-height: 1.45833333;
+}
+.comment-message a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.comment-message hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.comment-message li {
+    margin: 1em 0;
+}
+
+.comment-message code {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    color: #C25;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 1px 2px;
+    font-family: monospace;
+    font-size: 0.8em;
+    tab-size: 4;
+}
+.comment-message pre code {
+    background-color: #292a2d;
+    color: #FFF;
+    display: block;
+    border-radius: 3px;
+    padding: 0px 20px;
+    tab-size: 4;
+    overflow-x: scroll;
 }
 
 /* Notes */

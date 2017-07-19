@@ -1,11 +1,12 @@
 // Static comments
-(function ($) {
+jQuery(function ($) {
   var $comments = $('.js-comments');
 
   $('#comment-form').submit(function () {
     var form = this;
 
-    $(form).addClass('form--loading');
+    $(form).addClass('submitting');
+    $('#comment-form-submit').html('Loading ...');
 
     $.ajax({
       type: $(this).attr('method'),
@@ -14,24 +15,24 @@
       contentType: 'application/x-www-form-urlencoded',
       success: function (data) {
         $('#comment-form-submit').html('Submitted');
-        $('.post__comments-form .js-notice').removeClass('notice--danger').addClass('notice--success');
-        showAlert('<strong>Thanks for your comment!</strong> It will show on the site once it has been approved.');
-        $(form).removeClass('form--loading');
+        $('.new-comment-form .js-notice').removeClass('notice--danger').addClass('notice--success');
+        showAlert('<p style="color:#47bd40">Thanks for your comment! It will show on the site once it has been approved.</p>');
       },
       error: function (err) {
         console.log(err);
         $('#comment-form-submit').html('Submit Comment');
-        $('.post__comments-form .js-notice').removeClass('notice--success').addClass('notice--danger');
-        showAlert('<strong>Sorry, there was an error with your submission.</strong> Please make sure all required fields have been completed and try again.');
-        $(form).removeClass('form--loading');
+        $('.new-comment-form .js-notice').removeClass('notice--success').addClass('notice--danger');
+        showAlert('<p style="color:#e64848">Submission failed, please fill in all the required inputs.</p>');
+        $(form).removeClass('submitting');
       }
     });
 
     return false;
+
   });
 
   function showAlert(message) {
-    $('.post__comments-form .js-notice').removeClass('hidden');
-    $('.post__comments-form .js-notice-text').html(message);
+    $('.new-comment-form .js-notice').removeClass('hidden');
+    $('.new-comment-form .js-notice-text').html(message);
   }
-})(jQuery);
+});
