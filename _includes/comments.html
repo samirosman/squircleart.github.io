@@ -1,7 +1,7 @@
 <div class="comments-container">
 {% if site.data.comments[page.slug] %}
-  {% assign comments = site.data.comments[page.slug] | sort: date  %}
-    {% for comment in comments %}
+  {% assign comments = site.data.comments[page.slug] | sort: date %}
+    {% for comment in comments reversed %}
       {% assign message = comment[1].message %}
       {% assign name = comment[1].name %}
       {% assign email = comment[1].email %}

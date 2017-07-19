@@ -1,5 +1,5 @@
 // Static comments
-jQuery(function ($) {
+jQuery(document).ready(function ($) {
   var $comments = $('.js-comments');
 
   $('#comment-form').submit(function () {
