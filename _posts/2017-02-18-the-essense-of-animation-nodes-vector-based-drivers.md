@@ -1,9 +1,13 @@
 ---
 title: 'The Essence Of Animation Nodes: Vector Based Drivers'
 layout: post
-image: /images/the-essence-of-animation-nodes.png
-description:  In this tutorial, we will learn how to derive object's properties based on other properties in Animation Nodes including its transfromation channels.
+image: "/images/the-essence-of-animation-nodes.png"
+description: In this tutorial, we will learn how to derive object's properties based
+  on other properties in Animation Nodes including its transfromation channels.
 category: Animation-Nodes
+prerequisites:
+- text: Basic knowledge of the system of Animation Nodes.
+  url: https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-the-system.html
 ---
 
 We now know the system of AN and we are ready to start make awesome node trees. We said in the preface that AN is used in multiple applications and the first one was drivers, that is, controlling some property by another. And we are going to start by studying that in multiple tutorials to keep them short.

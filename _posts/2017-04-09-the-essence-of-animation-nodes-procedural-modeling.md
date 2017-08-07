@@ -3,7 +3,12 @@ title: 'The Essence Of Animation Nodes: Procedural Modeling'
 layout: post
 category: Animation-Nodes
 image: "/images/the-essence-of-animation-nodes.png"
-description: In this tutorial, I am going to teach you the basics of low level procedural modeling and we are going to apply using Animation Nodes.
+description: In this tutorial, I am going to teach you the basics of low level procedural
+  modeling and we are going to apply using Animation Nodes.
+prerequisites:
+- text: Good knowledge of Loops in Animation Nodes.
+  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html
+- text: Basic knowledge of arithmetics and vectors.
 ---
 
 We can divide procedural modeling into two categories:

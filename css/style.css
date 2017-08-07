@@ -394,6 +394,7 @@ fieldset button {
   border-bottom: 3px solid #b56363;
   border-radius: 5px;
   transition: all .1s ease;
+  outline: 0;
 }
 fieldset button:hover {
   background-color: #e25b5b;
@@ -486,6 +487,38 @@ fieldset button:hover {
     overflow-x: scroll;
 }
 
+/* Prerequisite */
+
+.show-prerequisites {
+  color: white;
+  background-color: #e46464;
+  padding: 10px;
+  border: 0;
+  border-bottom: 3px solid #b56363;
+  border-radius: 5px;
+  transition: all .1s ease;
+  display: block;
+  margin: 10px auto;
+  outline: 0;
+}
+.show-prerequisites:hover {
+  background-color: #e25b5b;
+}
+
+.prerequisites {
+  background-color: #ededed;
+  margin : 20px auto;
+  border: solid #e6e6e6 thin;
+  border-radius: 5px;
+  padding: 3%;
+  font-weight: 300;
+  display: none;
+}
+.prerequisites h3 {
+  font-weight: 300;
+  margin: 5px 0px;
+}
+
 /* Notes */
 
 .challenge {
@@ -498,12 +531,14 @@ fieldset button:hover {
     padding: 4px 10px;
     color: white;
     font-size: 1.2em;
+    border-radius: 5px 5px 0px 0px;
 }
 .challenge p:nth-child(2) {
     display:block;
     background-color:#dbfaf4;
     margin:0;
     padding: 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 .note {
 
@@ -515,12 +550,14 @@ fieldset button:hover {
     padding: 4px 10px;
     color: white;
     font-size: 1.2em;
+    border-radius: 5px 5px 0px 0px;
 }
 .note p:nth-child(2) {
     display:block;
     background-color:#e7f2fa;
     margin:0;
     padding: 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .hidden {

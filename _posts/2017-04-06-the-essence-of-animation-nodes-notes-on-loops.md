@@ -2,8 +2,13 @@
 title: 'The Essence Of Animation Nodes: Notes On Loops'
 layout: post
 image: "/images/the-essence-of-animation-nodes.png"
-description: In this small tutorial, I am going to give you some tips and tricks regarding loops in Animation Nodes. I will also try to connect it with what we learned before from vector based drivers, animations and such.
+description: In this small tutorial, I am going to give you some tips and tricks regarding
+  loops in Animation Nodes. I will also try to connect it with what we learned before
+  from vector based drivers, animations and such.
 category: Animation-Nodes
+prerequisites:
+- text: Good knowledge of Loops in Animation Nodes.
+  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html
 ---
 
 # Tips

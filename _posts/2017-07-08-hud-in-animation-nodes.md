@@ -3,10 +3,14 @@ title: HUD In Animation Nodes
 layout: post
 category: Animation-Nodes
 image: "/images/hud-in-animation-nodes/wall.png"
-description: In this tutorial, we will be creating some HUD elements procedurally in Animation Nodes. This procedural non-destructive approach allows the creation of highly customizable elements.
+description: In this tutorial, we will be creating some HUD elements procedurally
+  in Animation Nodes. This procedural non-destructive approach allows the creation
+  of highly customizable elements.
+prerequisites:
+- text: Experience with Animation Nodes.
+- text: Procedural modeling 3 tutorial.
+  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html
 ---
-
-I won't explain anything in details, so experience with AN is required.
 
 ## Example 1
 

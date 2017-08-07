@@ -2,8 +2,13 @@
 title: 'The Essence Of Animation Nodes: Loops'
 layout: post
 image: "/images/the-essence-of-animation-nodes.png"
-description: Loops are one of the available subprograms in Animation Nodes and by far the most useful as it gives you the ability to iterate over multiple object or do an operation multiple times. So we shall look into them in this tutorial.
+description: Loops are one of the available subprograms in Animation Nodes and by
+  far the most useful as it gives you the ability to iterate over multiple object
+  or do an operation multiple times. So we shall look into them in this tutorial.
 category: Animation-Nodes
+prerequisites:
+- text: Basic knowledge of the system of Animation Nodes.
+  url: https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-the-system.html
 ---
 
 AN has a special set of nodes called **Subprograms**. Your node tree is a program that do something, subprograms are smaller programs inside your main program that can be created one time and get used multiple times.

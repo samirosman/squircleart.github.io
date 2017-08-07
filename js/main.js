@@ -1,3 +1,16 @@
+// Show Prerequisite
+function showPrerequisites() {
+    var x = document.getElementById('prerequisites');
+    var style = window.getComputedStyle(x);
+    var display = style.getPropertyValue('display');
+
+    if (display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
 // Static comments
 jQuery(document).ready(function ($) {
   var $comments = $('.js-comments');

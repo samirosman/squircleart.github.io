@@ -2,8 +2,11 @@
 title: 'The Essence Of Animation Nodes: The system'
 layout: post
 image: "/images/the-essence-of-animation-nodes.png"
-description: We will start this series by explaining the system of AN and the available options to control this system including execution options and possible errors.
+description: We will start this series by explaining the system of AN and the available
+  options to control this system including execution options and possible errors.
 category: Animation-Nodes
+prerequisites:
+- text: Basic knowledge of blender.
 ---
 
 # Execution

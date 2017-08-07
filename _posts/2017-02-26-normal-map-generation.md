@@ -1,9 +1,13 @@
 ---
 title: Normal Map Generation
 layout: post
-image: /images/normal-map-generation/wall.png
-description: In this tutorial, we shall understand what a normal map is, derive a formula to calculate it from a height function and implement what we learned in a small normal map generator
+image: "/images/normal-map-generation/wall.png"
+description: In this tutorial, we shall understand what a normal map is, derive a
+  formula to calculate it from a height function and implement what we learned in
+  a small normal map generator
 category: Shading
+prerequisites:
+- text: Good knowledge of mathematics (Trigonometry, Algebra and Analytical Geometry).
 ---
 
 Normal maps are essential in the workflow of artists and it is used in a lot of applications especially in the making of game assets, Normal maps also have some interesting application that nobody is aware of, or at least not directly.

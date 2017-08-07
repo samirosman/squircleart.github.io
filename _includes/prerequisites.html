@@ -1,0 +1,16 @@
+<button class="show-prerequisites" onclick="showPrerequisites()">Show/Hide Prerequisites</button>
+<div class="prerequisites" id="prerequisites">
+  <h3>Prerequisites:</h3>
+  <small>The following is a list of all prerequisites in order to make the most out of the following tutorial.</small>
+  <ul>
+  {% for i in page.prerequisites %}
+    {% if {{i.url}} %}
+    <li><a href="{{i.url}}">{{i.text}}</a></li>
+    {% else %}
+    <li>{{i.text}}</li>
+    {% endif %}
+  {% else %}
+    <li> There are no prerequisites, you are good to go. </li>
+  {% endfor %}
+  </ul>
+</div>

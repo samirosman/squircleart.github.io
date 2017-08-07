@@ -3,7 +3,12 @@ title: 'The Essence Of Animation Nodes: Procedural Modeling 2'
 layout: post
 category: Animation-Nodes
 image: "/images/the-essence-of-animation-nodes.png"
-description: In this second part of the procedural modeling in Animation Node tutorial series, I am going to give you couple of more examples on low level procedural modeling.
+description: In this second part of the procedural modeling in Animation Node tutorial
+  series, I am going to give you couple of more examples on low level procedural modeling.
+prerequisites:
+- text: Part 1 of the tutorial.
+  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html
+- text: Basic knowledge of Trigonometry.
 ---
 
 We learned before how we can make a line and a grid which are really the simplest objects you can create, we are now going to level up and create more complicated objects.

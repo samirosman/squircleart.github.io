@@ -2,8 +2,14 @@
 title: Introduction To Texture Mapping
 layout: post
 category: Shading
-description: Artists tend to use UVs to perform texture mapping even if it is not needed; because this saves them the trouble of doing math. In this tutorial, I am going to teach you how texture mapping works aside from UV mapping.
+description: Artists tend to use UVs to perform texture mapping even if it is not
+  needed; because this saves them the trouble of doing math. In this tutorial, I am
+  going to teach you how texture mapping works aside from UV mapping.
 image: "/images/introduction-to-texture-mapping/wall.png"
+prerequisites:
+- text: Basic knowledge of blender's shading system.
+- text: Good knowledge of transformation matrices.
+  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-transformation-matrix.html
 ---
 
 Understanding texture mapping won't only benefit you in texture mapping, it will also benefit you in procedural texturing and image processing. So I shall give you a good idea of how texture mapping works and then tell you about some techniques to use when doing texture mapping.

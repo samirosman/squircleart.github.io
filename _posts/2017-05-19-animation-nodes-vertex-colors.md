@@ -3,7 +3,13 @@ title: Animation Nodes Vertex Colors
 layout: post
 category: Animation-Nodes
 image: "/images/animation-nodes-vertex-colors/wall.png"
-description: In this tutorial, I am going to teach you about blender's mesh loops and how we can utilize them to write color data to vertex color maps in Animation Nodes.
+description: In this tutorial, I am going to teach you about blender's mesh loops
+  and how we can utilize them to write color data to vertex color maps in Animation
+  Nodes.
+prerequisites:
+- text: Good knowledge of Loops in Animation Nodes.
+  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html
+- text: Very basic knowledge of python.
 ---
 
 ## Vertex Color
@@ -162,4 +168,4 @@ If you noticed, loops that should be colored the same like $(0,0), (0,2),(0,3)$ 
 ***
 ***
 
-You now know how to deal with loops (not the subprograms) and vertex color maps in Animation Nodes. Future tutorials will make use of what we learned today, so make sure you understand it well.
+You now know how to deal with loops (not the subprogram) and vertex color maps in Animation Nodes. Future tutorials will make use of what we learned today, so make sure you understand it well.

@@ -10,6 +10,7 @@ layout: default
   <h1 id="post-title2">{{ page.title | split:':' | last }}</h1>
 
   <img src="{{ page.image}}">
+  {% include prerequisites.html %}
   <p> {{ page.description }} </p>
 
   {{content}}
@@ -17,18 +18,4 @@ layout: default
 {% include new_comment.html %}
 {% include comments.html %}
 
-<h2 id="other-posts"> More Posts </h2>
-<div class="post-containter" style="padding-top: 0;">
-  {% if page.previous.url %}
-  <a class="post" href="{{page.previous.url}}">
-    <img class="post-image" src="{{ page.previous.image }}" alt="{{ page.previous.title }}"/>
-    <h5>{{ page.previous.title }}</h5>
-  </a>
-  {% endif %}
-  {% if page.next.url %}
-  <a class="post" href="{{page.next.url}}">
-    <img class="post-image" src="{{ page.next.image }}" alt="{{ page.next.title }}"/>
-    <h5>{{ page.next.title }}</h5>
-  </a>
-  {% endif %}
-</div>
+{% include other_posts.html %}

@@ -3,10 +3,18 @@ title: Introduction To Functions Plotting
 layout: post
 category: Shading
 image: "/images/introduction-to-functions-plotting/wall.png"
-description: Procedural drawing and texturing is all about plotting and editing mathematical functions, in this tutorial, we are going to learn how to plot all sorts of mathematical functions in blender.
+description: Procedural drawing and texturing is all about plotting and editing mathematical
+  functions, in this tutorial, we are going to learn how to plot all sorts of mathematical
+  functions in blender.
+prerequisites:
+- text: Introduction to texture mapping.
+  url: https://squircleart.github.io/shading/introduction-to-texture-mapping.html
+- text: Introduction to value remapping.
+  url: https://squircleart.github.io/math/value-remapping.html
+- text: The ability to compute or at least understand first derivative and first order
+    partial derivatives.
+- text: Have a good understanding of what functions are.
 ---
-
-We will be using concepts learned in the [Introduction To Texture Mapping](https://squircleart.github.io/shading/introduction-to-texture-mapping.html) and [Value Remapping](https://squircleart.github.io/math/value-remapping.html) posts, so make sure you understand them first.
 
 ## Explicit Functions
 
