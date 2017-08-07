@@ -3,12 +3,8 @@ title: Introduction To Mathematical Drawing
 layout: post
 category: Shading
 image: "/images/introduction-to-mathematical-drawing/wall.png"
-description: We previously learned how to plot function to generate shapes provided
-  we have the equation for it. In this tutorial, we are going to learn to create our
-  own functions to draw shapes and patterns.
+description: We previously learned how to plot function to generate shapes provided we have the equation for it. In this tutorial, we are going to learn to create our own functions to draw shapes and patterns.
 ---
-
-We previously learned how to plot function to generate shapes provided we have the equation for it. In this tutorial, we are going to learn to create our own functions to draw shapes and patterns.
 
 It is recommend that you read [Introduction To Texture Mapping](https://squircleart.github.io/shading/introduction-to-texture-mapping.html) , [Value Remapping](https://squircleart.github.io/math/value-remapping.html) and  [Introduction To Functions Plotting](https://squircleart.github.io/shading/introduction-to-functions-plotting.html) first because this post highly depend on it.
 

@@ -3,12 +3,8 @@ title: Drop Shadow Effect
 layout: post
 category: Blender
 image: "/images/drop-shadow-effect/wall.png"
-description: In this tutorial, we are going to learn how to implement a drop shadow
-  and inner shadow effects in blender. Our implementation will be very easy and very
-  similar to photoshop's one.
+description: In this tutorial, we are going to learn how to implement a drop shadow and inner shadow effects in blender. Our implementation will be very easy and very similar to photoshop's one.
 ---
-
-In this small tutorial, we are going to learn how to implement a drop shadow and inner shadow effects in blender. Our implementation will be very easy and very similar to photoshop's one.
 
 Sometime last year, I published this [product](https://blendermarket.com/products/drop-shadow-and-inner-shadow) and I think it is time you know how I created it.
 

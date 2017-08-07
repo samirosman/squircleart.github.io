@@ -3,11 +3,8 @@ title: 'The Essence Of Animation Nodes: Procedural Modeling'
 layout: post
 category: Animation-Nodes
 image: "/images/the-essence-of-animation-nodes.png"
-description: In this tutorial, I am going to teach you the basics of low level procedural
-  modeling and we are going to apply using Animation Nodes.
+description: In this tutorial, I am going to teach you the basics of low level procedural modeling and we are going to apply using Animation Nodes.
 ---
-
-In this tutorial, I am going to teach you the basics of low level procedural modeling and we are going to apply using Animation Nodes, our  favourite tool.
 
 We can divide procedural modeling into two categories:
 

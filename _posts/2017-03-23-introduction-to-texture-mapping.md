@@ -2,13 +2,9 @@
 title: Introduction To Texture Mapping
 layout: post
 category: Shading
-description: Artists tend to use UVs to perform texture mapping even if it is not
-  needed; because this saves them the trouble of doing math. In this tutorial, I am
-  going to teach you how texture mapping works aside from UV mapping.
+description: Artists tend to use UVs to perform texture mapping even if it is not needed; because this saves them the trouble of doing math. In this tutorial, I am going to teach you how texture mapping works aside from UV mapping.
 image: "/images/introduction-to-texture-mapping/wall.png"
 ---
-
-Artists tend to use UVs to perform texture mapping even if it is not needed; because this saves them the trouble of doing math, but this is not how we face our problems, we solve problems using the most efficient way and not the easier way.
 
 Understanding texture mapping won't only benefit you in texture mapping, it will also benefit you in procedural texturing and image processing. So I shall give you a good idea of how texture mapping works and then tell you about some techniques to use when doing texture mapping.
 
@@ -254,10 +250,3 @@ Notice that this is simplest earth projection method. There is a lot of projecti
 ***
 
 I think I have given you enough examples, theories and techniques to start doing your own texture mapping. So go ahead, start practicing and playing with that concept you just learned.
-
-
-
-
-
-
-

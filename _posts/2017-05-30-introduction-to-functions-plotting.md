@@ -3,12 +3,8 @@ title: Introduction To Functions Plotting
 layout: post
 category: Shading
 image: "/images/introduction-to-functions-plotting/wall.png"
-description: Procedural drawing and texturing is all about plotting and editing mathematical
-  functions, in this tutorial, we are going to learn how to plot all sorts of mathematical
-  functions in blender.
+description: Procedural drawing and texturing is all about plotting and editing mathematical functions, in this tutorial, we are going to learn how to plot all sorts of mathematical functions in blender.
 ---
-
-Procedural drawing and texturing is all about plotting and editing mathematical functions, in this tutorial, we are going to learn how to plot all sorts of mathematical functions in blender.
 
 We will be using concepts learned in the [Introduction To Texture Mapping](https://squircleart.github.io/shading/introduction-to-texture-mapping.html) and [Value Remapping](https://squircleart.github.io/math/value-remapping.html) posts, so make sure you understand them first.
 
@@ -77,9 +73,9 @@ $$
 ### Big Epsilon Errors
 
  It should be noted that $\epsilon$ should not be too large because it was assumed to be small in the derivation of the distance estimation function. Here is the function $e^x$ plotted with small and high epsilon to demonstrate the effect of high epsilons:
- 
+
  ![High Epsilon](/images/introduction-to-functions-plotting/high_epsilon.gif)
- 
+
  Some functions are affected more than other because of their nature, so you can always experiment and determine the limit for the epsilon value.
 
 ## Implicit Functions
@@ -168,11 +164,3 @@ And of course, this won't have uniform thickness so we have to use that distance
 This is of course an approximation which is less accurate than computing the actual gradient however it skip us the process of differentiating big functions.
 
 You are now familiar with the most important types of functions and know how to plot them, next posts will be on how we can make our own function in order to draw whatever we want using maths, stay tuned.
-
-
-
-
-
-
-
-

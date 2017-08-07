@@ -3,12 +3,8 @@ title: Value Remapping
 layout: post
 category: Math
 image: "/images/value-remapping/wall.png"
-description: Remapping values from an interval to another is one of the most important
-  math concepts you have to be familiar with when it comes to CG, in this tutorial,
-  we are going to discuss and explain values remapping.
+description: Remapping values from an interval to another is one of the most important math concepts you have to be familiar with when it comes to CG, in this tutorial, we are going to discuss and explain values remapping.
 ---
-
-Remapping values from an interval to another is one of the most important math concepts you have to be familiar with when it comes to CG, in this tutorial, we are going to discuss and explain value remapping.
 
 ## What is Value Remapping
 
@@ -105,7 +101,7 @@ Ok, what is the general equation for non-linear remapping. Well, there is no equ
 
 1. Transform the interval $X$ such that $X_1$ be at zero.
 2. Scale the interval $X$ such that its length is equal to 1. This can be done by dividing it by $\vert X_2-X_1 \vert$.
-3. Evaluate the the interval at $F(x)$ where $F(x)$ is a non linear continuous function with range $[0,1]$. 
+3. Evaluate the the interval at $F(x)$ where $F(x)$ is a non linear continuous function with range $[0,1]$.
 4. Scale the interval $X$ to match $Y$ using the factor ${\vert Y_2 - Y_1 \vert}$.
 5. Add $Y_1$ to the interval $X$ to match their location.
 
@@ -144,6 +140,3 @@ This function is sometimes called the ease-in-out function or simply a sinusoida
 And thats it for non linear remapping, You find a function with the range $[0,1]$ or you simply linearly remap its range to that range ! and you follow the steps described above.
 
 Value remapping will come up as a base for almost everything you try to do, so it is important you truly understand it. If you have any thoughts, please let me know.
-
-
-

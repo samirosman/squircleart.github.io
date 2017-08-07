@@ -2,13 +2,9 @@
 title: 'The Essence Of Animation Nodes: Notes On Loops'
 layout: post
 image: "/images/the-essence-of-animation-nodes.png"
-description: In this small tutorial, I am going to give you some tips and tricks regarding
-  loops in Animation Nodes. I will also try to connect it with what we learned before
-  from vector based drivers, animations and such.
+description: In this small tutorial, I am going to give you some tips and tricks regarding loops in Animation Nodes. I will also try to connect it with what we learned before from vector based drivers, animations and such.
 category: Animation-Nodes
 ---
-
-In this small tutorial, I am going to give you some tips and tricks regarding loops in Animation Nodes. I will also try to connect it with what we learned before from vector based drivers, animations and such.
 
 # Tips
 
@@ -46,7 +42,7 @@ In this example, I made 2 loops that does exactly the same thing, and that is, t
 
 $$[0,1\cdot 10^{0.4},2\cdot 10^{0.4},3\cdot 10^{0.4}, ... , 99999\cdot 10^{0.4}]$$
 
-However, one of them is **Bad** and the other is **Good**. Can you guess the reason why the **Bad** is bad? In the Bad example, I computed the $10^{0.4}$ inside the loop (Thats why it is colored blue) while in the Good example, I computed ${10}^{0.4}$ outside the loop and input it as a parameter. The **Bad** loop took 163ms to run while the **Good** only took 68ms to run. Now you know why it is bad. 
+However, one of them is **Bad** and the other is **Good**. Can you guess the reason why the **Bad** is bad? In the Bad example, I computed the $10^{0.4}$ inside the loop (Thats why it is colored blue) while in the Good example, I computed ${10}^{0.4}$ outside the loop and input it as a parameter. The **Bad** loop took 163ms to run while the **Good** only took 68ms to run. Now you know why it is bad.
 
 The ${10}^{0.4}$ node inside the loop ran 10,000,000 times ! While the ${10}^{0.4}$ outside the loop ran only 100. In both cases, the value was constant at all the runs. So why put it inside a loop and compute it every iteration and every run?
 
@@ -123,7 +119,3 @@ Then duplicate the selected verticies and make them a separate mesh. And then yo
 ![Red Fruit Node Tree](/images/the-essence-of-animation-nodes-notes-on-loops/red_fruit_nodetree.png)
 
 Take your time to understand it if you haven't already.
-
-
-
-

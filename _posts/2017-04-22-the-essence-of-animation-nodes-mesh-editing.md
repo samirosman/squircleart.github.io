@@ -3,12 +3,8 @@ title: 'The Essence Of Animation Nodes: Mesh Editing'
 layout: post
 category: Animation-Nodes
 image: "/images/the-essence-of-animation-nodes.png"
-description: The last couple of tutorials were about procedural modeling. In this
-  tutorial, will explore a closely related topic, that is, mesh editing in Animation
-  Nodes which is editing the geometry of preexisting meshes.
+description: The last couple of tutorials were about procedural modeling. In this tutorial, will explore a closely related topic, that is, mesh editing in Animation Nodes which is editing the geometry of preexisting meshes.
 ---
-
-The last couple of tutorials were about procedural modeling. In this tutorial, will explore a closely related topic, that is, mesh editing in Animation Nodes which is editing the geometry of preexisting meshes.
 
 I will give you 2 examples, one of them is fairly easy and the other is a bit more hard to do as it requires imagination which you hopefully got by now from the procedural modeling tutorials.
 

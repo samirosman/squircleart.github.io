@@ -1,14 +1,10 @@
 ---
-title: 'The Essence Of Animation Nodes:  Animation'
+title: 'The Essence Of Animation Nodes: Animation'
 layout: post
 image: "/images/the-essence-of-animation-nodes.png"
-description: Animation Nodes is a master when it comes to animation in blender. So
-  we shall give some examples on animating using AN, we shall look a fcurves and interpolations
-  as well.
+description: Animation Nodes is a master when it comes to animation in blender. So in this tutorial we shall give some examples on animating using AN, we shall also look at fcurves and interpolations as well.
 category: Animation-Nodes
 ---
-
-Animation Nodes is a master when it comes to animation in blender, not because of the  nodes that are related to animation, but because of the freedom AN gives you while animating is really up to you.
 
 In this tutorial, I am going to give you some examples on modifying existing animations to create a more advanced and realistic animations as well as creating animations from scratch.
 
@@ -178,7 +174,7 @@ Yes, using the inverse of the linear function will reverse the animation.
 
 ### Explanation
 
-Going all the way up then all the way down, this will complete the animation in half the time then go back in reverse in the other half. 
+Going all the way up then all the way down, this will complete the animation in half the time then go back in reverse in the other half.
 
 Playing with this is real fun, right?
 
@@ -233,5 +229,3 @@ $$
 Where $\theta \in [0,2 \pi]$ and $r$ is the radius of the circle.
 
 Check the [Direction to Rotation Node](https://animation-nodes-manual.readthedocs.io/en/latest/user_guide/nodes/rotation/direction_to_rotation.html) docs.
-
-

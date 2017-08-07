@@ -2,15 +2,11 @@
 title: 'The Essence Of Animation Nodes: Transformation Matrix'
 layout: post
 image: "/images/the-essence-of-animation-nodes.png"
-description: Matrices are one of the data types that you will be using a lot in Animation
-  Nodes, however, not everybody uses it because it is a little bit confusing and hard
-  to understand, So we will take a look at them now.
+description: Matrices are one of the data types that you will be using a lot in Animation Nodes, So in this tutorial, I will teach you how we can use transfromation matrices.
 category: Animation-Nodes
 ---
 
-Matrices is one of the data types that you will be using a lot in Animation Nodes and that's because they are artist's best friend when it comes to animating and transforming object, yet, they don't get much attention from artists because they are a bit confusing or hard to understand. We tend to use vectors, eulers and quaternions to represent and control transformations but we really should be using **Transformation Matrices**  and you will, after I show you how practical they are.
-
-This post won't include any maths or linear algebra, we will just scratch the basic concept of transformation matrices so that you start using them.
+We tend to use vectors, eulers and quaternions to represent and control transformations but we really should be using **Transformation Matrices** and you will, after I show you how practical they are. This post won't include any maths or linear algebra, we will just scratch the basic concept of transformation matrices so that you start using them.
 
 I will introduce you to some examples of usage, and it is important that you apply and edit them your own so that you get a sense of what they are, while if you don't, you will struggle now and forever as you use them.
 

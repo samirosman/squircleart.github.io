@@ -3,12 +3,8 @@ title: 'Charts In Animation Nodes: Bar Charts'
 layout: post
 category: Animation-Nodes
 image: "/images/charts-in-animation-nodes-bar-charts/wall.png"
-description: Bar Charts are essential to representing data in an appealing way. Creating
-  such animations often requires great amount of time and effort, so in this tutorial
-  I am going to teach you how we can automate the creations of such animations.
+description: Bar Charts are essential to representing data in an appealing way. Creating such animations often requires great amount of time and effort, so in this tutorial I am going to teach you how we can automate the creations of such animations.
 ---
-
-Bar Charts are essential to representing data in an appealing way. Creating such animations often requires great amount of time and effort, so in this tutorial I am going to teach you how we can automate the creations of such animations.
 
 We will start by creating a nice plane to plot our data on. Then we are going to create the bars. Then we are going to animate those bar into nice appealing animations.
 

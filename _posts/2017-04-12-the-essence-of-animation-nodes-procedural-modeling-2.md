@@ -3,11 +3,8 @@ title: 'The Essence Of Animation Nodes: Procedural Modeling 2'
 layout: post
 category: Animation-Nodes
 image: "/images/the-essence-of-animation-nodes.png"
-description: In this second part of the procedural modeling in Animation Node tutorial
-  series, I am going to give you couple of more examples on low level procedural modeling.
+description: In this second part of the procedural modeling in Animation Node tutorial series, I am going to give you couple of more examples on low level procedural modeling.
 ---
-
-In this second part of the procedural modeling in Animation Node tutorial series, I am going to give you couple of more examples on low level procedural modeling. If you haven't read the first tutorial, I recommend you read it first [Here](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling.html).
 
 We learned before how we can make a line and a grid which are really the simplest objects you can create, we are now going to level up and create more complicated objects.
 
@@ -126,8 +123,3 @@ Producing:
 By now you should have a good idea of what should be done in order to do procedural modeling. But till now, we have been playing around, creating some basic and simple shapes. So we are not done at all. We still have a lot to learn, more objects to create and fun time ahead.
 
 I will keep the tutorials short so you don't get board, so stay tuned for the next part of the tutorial!
-
-
-
-
-

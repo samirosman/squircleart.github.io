@@ -1,8 +1,8 @@
 ---
-title: "Normal Map Generation"
+title: Normal Map Generation
 layout: post
 image: /images/normal-map-generation/wall.png
-description:  "We shall understand what a normal map is, derive a formula to calculate it from a height function and implement what we learned in a small normal map generator"
+description: In this tutorial, we shall understand what a normal map is, derive a formula to calculate it from a height function and implement what we learned in a small normal map generator
 category: Shading
 ---
 

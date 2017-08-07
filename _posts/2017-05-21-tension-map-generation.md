@@ -3,11 +3,8 @@ title: Tension Map Generation
 layout: post
 category: Animation-Nodes
 image: "/images/tension-map-generation/wall.png"
-description: In this tutorial, I am going to teach how to generate tension maps in
-  blender using Animation Nodes.
+description: In this tutorial, I am going to teach how to generate tension maps in blender using Animation Nodes.
 ---
-
-In this tutorial, I am going to teach how to generate tension maps in blender using Animation Nodes.
 
 A tension map is a map that represents the change of the density of a mesh. The change of density is usually defined as the change of areas of polygons during deformation or the change of the lengths of the edges during deformation.
 
@@ -139,5 +136,3 @@ This method is exactly the same as the previous method except we have polygon in
 ![All Three](/images/tension-map-generation/wall.png)
 
 Those are all three algorithms, Polygon, Vertex, Vertex-Polygon from left to right. The Vertex-Polygon method is smoothest at high deltas while Vertex method is smoothest at small deltas. Use a combination of both if you want, if you have a better method, please share with me.
-
-

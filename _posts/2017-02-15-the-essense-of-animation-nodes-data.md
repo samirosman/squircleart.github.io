@@ -2,7 +2,7 @@
 title: 'The Essence Of Animation Nodes: Data'
 layout: post
 image: "/images/the-essence-of-animation-nodes.png"
-description: We talk about how data is handled in Animation Nodes
+description: In thus tutorial, we will talk about how Animation Nodes handle data.
 category: Animation-Nodes
 ---
 

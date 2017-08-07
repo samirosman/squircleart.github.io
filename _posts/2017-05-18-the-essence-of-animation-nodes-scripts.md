@@ -3,11 +3,8 @@ title: 'The Essence Of Animation Nodes: Scripts'
 layout: post
 category: Animation-Nodes
 image: "/images/the-essence-of-animation-nodes.png"
-description: In this tutorial, I am going to introduce you to script nodes in Animation
-  Nodes and Blender Python API.
+description: In this tutorial, I am going to introduce you to script nodes in Animation Nodes and Blender Python API.
 ---
-
-In this tutorial, I am going to introduce you to script nodes in Animation Nodes and Blender Python API.
 
 You don't have to know python in order to understand this tutorial, however, it is recommended that you know the basics like I do.
 

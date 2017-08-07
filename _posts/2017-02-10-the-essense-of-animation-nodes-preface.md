@@ -2,7 +2,7 @@
 title: 'The Essence Of Animation Nodes: Preface'
 layout: post
 image: "/images/the-essence-of-animation-nodes.png"
-description: We talk about Animation Nodes and get ready to start the tutorial series.
+description: In this first post in the series, we will talk about Animation Nodes and get ready for the tutorial series.
 category: Animation-Nodes
 ---
 
@@ -86,4 +86,3 @@ I want to specifically thank:
 
 * **Jacques Lucke** - The creator of Animation Nodes, I really hope he get to be a blender developer because he will make the software Awesome. (As if he haven't already)
 * **Jimmy Gunawan** - A first class noder who helped me when I started and a guy who has the creativity do cool procedural stuff using nodes everyday!
-

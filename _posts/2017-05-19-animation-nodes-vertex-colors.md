@@ -3,12 +3,8 @@ title: Animation Nodes Vertex Colors
 layout: post
 category: Animation-Nodes
 image: "/images/animation-nodes-vertex-colors/wall.png"
-description: In this tutorial, I am going to teach you about blender's mesh loops
-  and how we can utilize them to write color data to vertex color maps in Animation
-  Nodes.
+description: In this tutorial, I am going to teach you about blender's mesh loops and how we can utilize them to write color data to vertex color maps in Animation Nodes.
 ---
-
-In this tutorial, I am going to teach you about blender's mesh loops and how we can utilize them to write color data to vertex color maps in Animation Nodes.
 
 ## Vertex Color
 
