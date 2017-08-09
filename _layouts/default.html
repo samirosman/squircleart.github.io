@@ -8,8 +8,10 @@
     {% include js.html %}
     {% include mathjax.html %}
     {% seo title=false %}
+    {% include tag_manager.html %}
   </head>
   <body>
+    {% include tag_manager_noscript.html %}
     {% include header.html %}
 
     {{content}}
