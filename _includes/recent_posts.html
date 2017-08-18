@@ -1,0 +1,12 @@
+<div class="post-containter" style="padding-top: 0;">
+    {% assign posts = site.posts %}
+    {% if page.categories %}
+        {% assign posts = site.related_posts %}
+    {% endif %}
+    {% for post in posts limit:3 %}
+    <a class="post" href="{{post.url}}">
+        <img class="post-image" src="{{ post.image }}" alt="{{ post.title }}"/>
+        <h5>{{ post.title }}</h5>
+    </a>
+    {% endfor %}
+</div>

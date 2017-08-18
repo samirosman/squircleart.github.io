@@ -1,7 +1,7 @@
 ---
 title: 'The Essence Of Animation Nodes: Preface'
 layout: post
-image: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes-preface/the-essence-of-animation-nodes.png"
 description: In this first post in the series, we will talk about Animation Nodes and get ready for the tutorial series.
 category: Animation-Nodes
 ---

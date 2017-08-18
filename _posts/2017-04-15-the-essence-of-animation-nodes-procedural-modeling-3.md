@@ -2,7 +2,7 @@
 title: 'The Essence Of Animation Nodes: Procedural Modeling 3'
 layout: post
 category: Animation-Nodes
-image: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes-preface/the-essence-of-animation-nodes.png"
 description: 'Welcome to this third part of the procedural modeling tutorial in Animation
   Nodes. I am going to give you couple of more examples on low level procedural modeling,
   and the best part about this tutorial is: We are going to make a cupcake!'

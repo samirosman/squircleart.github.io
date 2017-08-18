@@ -1,7 +1,7 @@
 ---
 title: 'The Essence Of Animation Nodes: Data'
 layout: post
-image: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes-preface/the-essence-of-animation-nodes.png"
 description: In thus tutorial, we will talk about how Animation Nodes handle data.
 category: Animation-Nodes
 prerequisites:

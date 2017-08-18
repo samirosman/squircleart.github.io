@@ -2,7 +2,7 @@
 title: 'The Essence Of Animation Nodes: Procedural Modeling 2'
 layout: post
 category: Animation-Nodes
-image: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes-preface/the-essence-of-animation-nodes.png"
 description: In this second part of the procedural modeling in Animation Node tutorial
   series, I am going to give you couple of more examples on low level procedural modeling.
 prerequisites:

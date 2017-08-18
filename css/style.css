@@ -58,49 +58,95 @@ body {
     padding: 40px;
     clear: both;
 }
-#column1 {
+.higher-footer .column1 {
     width: 33.333333%;
-    width: calc(100% / 3);
+    width: calc(100% / 3.04);
     display: inline-block;
     vertical-align:top;
     text-align: center;
 }
-#column1 h5{
+.higher-footer .column1 h5{
     color: white;
     margin: 0;
     padding: 0;
     font-weight: 300;
     text-align: left;
 }
-#column1 p{
+.higher-footer .column1 p{
     color: #adadad;
     font-weight: 300;
     font-size: 0.8em;
     text-align: left;
 }
-#column2 {
+.higher-footer .column2 {
     width: 33.333333%;
-    width: calc(100% / 3);
+    width: calc(100% / 3.04);
     display: inline-block;
     vertical-align:top;
     text-align: center;
 }
-#column2 h5{
+.higher-footer .column2 h5{
     color: white;
     margin: 0;
     padding: 0;
     font-weight: 300;
 }
-#column2 ul {
+.higher-footer .column2 ul {
     padding: 0;
 }
-#column2 ul li {
+.higher-footer .column2 ul li {
     list-style-type: none;
 }
-#column2 ul li a{
+.higher-footer .column2 ul li a{
     color: #adadad;
     font-weight: 300;
     font-size: 0.9em;
+    text-decoration: none;
+}
+
+/* Home Page */
+
+.home-logo {
+    background: #292a2d;
+    text-align: center;
+}
+.home-logo img {
+    max-width: 60%;
+    height: auto;
+}
+
+.post-series {
+    background: #292a2d;
+    height: auto;
+    padding: 40px;
+    clear: both;
+    font-weight: 300;
+}
+.post-series div {
+    width: 33.333333%;
+    width: calc(100% / 3.04);
+    display: inline-block;
+    vertical-align:top;
+}
+.post-series div h4 {
+    color: white;
+    margin: 0;
+    font-weight: 300;
+}
+.post-series div ol {
+    margin: 0;
+    padding: 20px;
+}
+.post-series div ol li {
+    color: #d0d0d0;
+}
+.post-series div ol a {
+    color: #d0d0d0;
+    text-decoration: none;
+}
+.post-series div ol a:hover {
+    color: #d0d0d0;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -188,11 +234,10 @@ small {
     margin:10px;
     font-weight: 400;
 }
-#other-posts {
+#recent-posts {
     text-align: center;
-    border-top: solid 3px #dcdcdc;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     font-weight: 300;
 }
 

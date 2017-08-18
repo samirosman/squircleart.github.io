@@ -1,7 +1,7 @@
 ---
 title: 'The Essence Of Animation Nodes: Vector Based Drivers'
 layout: post
-image: "/images/the-essence-of-animation-nodes.png"
+image: "/images/the-essence-of-animation-nodes-preface/the-essence-of-animation-nodes.png"
 description: In this tutorial, we will learn how to derive object's properties based
   on other properties in Animation Nodes including its transfromation channels.
 category: Animation-Nodes
