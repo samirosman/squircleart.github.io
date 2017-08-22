@@ -9,7 +9,7 @@ description: Bar Charts are essential to representing data in an appealing way. 
 prerequisites:
 - text: Experience in Animation Nodes.
 - text: HUD In Animation Nodes tutorial.
-  url: https://squircleart.github.io/animation-nodes/hud-in-animation-nodes.html
+  url: /animation-nodes/hud-in-animation-nodes.html
 ---
 
 We will start by creating a nice plane to plot our data on. Then we are going to create the bars. Then we are going to animate those bar into nice appealing animations.
@@ -182,7 +182,7 @@ We can of course use traditional animation where all bars raise at once as follo
 
 ![Bar Traditional Animation](/images/charts-in-animation-nodes-bar-charts/bar_traditional_animation.gif)
 
-If you can't understand why this works, please read [Introduction To Animation](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-animation.html) and [Value Remapping](https://squircleart.github.io/math/value-remapping.html) posts.
+If you can't understand why this works, please read [Introduction To Animation](/animation-nodes/the-essence-of-animation-nodes-animation.html) and [Value Remapping](/math/value-remapping.html) posts.
 
 Going back to the falloff animation, the animation of the bar doesn't look nice at all, I realized that this is because bars are of different size and they all raise with the same duration, this means that some bars will rise faster than others, to fix this we will have to go low level and make our own falloff.
 

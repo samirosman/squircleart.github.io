@@ -7,7 +7,7 @@ description: In this second part of the procedural modeling in Animation Node tu
   series, I am going to give you couple of more examples on low level procedural modeling.
 prerequisites:
 - text: Part 1 of the tutorial.
-  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html
+  url: /animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html
 - text: Basic knowledge of Trigonometry.
 ---
 

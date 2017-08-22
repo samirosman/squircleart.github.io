@@ -8,7 +8,7 @@ description: 'Welcome to this third part of the procedural modeling tutorial in 
   and the best part about this tutorial is: We are going to make a cupcake!'
 prerequisites:
 - text: Part 2 of the tutorial.
-  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html
+  url: /animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html
 ---
 
 We learned before how to generate: lines, grids, regular convex shapes, cones, pyramids and regular non-convex shapes. In the following example, we are going to extend the regular convex and non-convex shapes into 3D, So lets get started!

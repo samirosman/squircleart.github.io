@@ -9,7 +9,7 @@ image: "/images/introduction-to-texture-mapping/wall.png"
 prerequisites:
 - text: Basic knowledge of blender's shading system.
 - text: Good knowledge of transformation matrices.
-  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-transformation-matrix.html
+  url: /animation-nodes/the-essence-of-animation-nodes-transformation-matrix.html
 ---
 
 Understanding texture mapping won't only benefit you in texture mapping, it will also benefit you in procedural texturing and image processing. So I shall give you a good idea of how texture mapping works and then tell you about some techniques to use when doing texture mapping.
@@ -113,7 +113,7 @@ Multiplying by 5 will change the interval to be [0,5] and most of the image will
 
 This node is absolutely gorgeous! The name is a bit misleading though, it has nothing to do with mapping. This node basically takes a vector and multiply it by a transformation matrix which it generates based on your inputs then it modulo the output and multiply by a max-min mask.
 
-As you can see, it is an all in one node, we can do translation, rotation, scaling, modulo and more. I will assume that you are familiar with transformation matrices and have experience with them, if you don't, check my tutorial on the topic: [The Essence Of Animation Nodes: Transformation Matrix](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-transformation-matrix.html).
+As you can see, it is an all in one node, we can do translation, rotation, scaling, modulo and more. I will assume that you are familiar with transformation matrices and have experience with them, if you don't, check my tutorial on the topic: [The Essence Of Animation Nodes: Transformation Matrix](/animation-nodes/the-essence-of-animation-nodes-transformation-matrix.html).
 
 There is multiple options in the node:
 

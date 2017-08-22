@@ -7,7 +7,7 @@ description: Matrices are one of the data types that you will be using a lot in 
 category: Animation-Nodes
 prerequisites:
 - text: Good knowledge of the system of Animation Nodes
-  url: https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-the-system.html
+  url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
 ---
 
 We tend to use vectors, eulers and quaternions to represent and control transformations but we really should be using **Transformation Matrices** and you will, after I show you how practical they are. This post won't include any maths or linear algebra, we will just scratch the basic concept of transformation matrices so that you start using them.

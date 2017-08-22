@@ -8,7 +8,7 @@ description: In this small tutorial, I am going to give you some tips and tricks
 category: Animation-Nodes
 prerequisites:
 - text: Good knowledge of Loops in Animation Nodes.
-  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html
+  url: /animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html
 ---
 
 # Tips
@@ -95,7 +95,7 @@ In the Get List Element loop, I input the float list as a parameter and not as a
 # Vector Based Drivers
 We saw before how we can derive some property by another property. Using loops, we can do that for multiple objects automatically.
 
-Go back to [Vector Based Drivers](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-vector-based-drivers.html) tutorial and try to implement all the examples over multiple objects.
+Go back to [Vector Based Drivers](/animation-nodes/the-essense-of-animation-nodes-vector-based-drivers.html) tutorial and try to implement all the examples over multiple objects.
 
 ## Example 5.6a
 

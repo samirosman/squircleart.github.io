@@ -9,7 +9,7 @@ description: In this tutorial, we will be creating some HUD elements procedurall
 prerequisites:
 - text: Experience with Animation Nodes.
 - text: Procedural modeling 3 tutorial.
-  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html
+  url: /animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html
 ---
 
 ## Example 1
@@ -46,7 +46,7 @@ Alternatively, we can animate and slice the list of matrices used in replication
 
 ## Example 3
 
-I already showed you how we can create a [circle](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html) and a [cylinder](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html) (Read them first as the following example dependent on them), what we are going to create here is a circle with a hole, it can be created using two loops vertices connected to each other, but a cylinder is in fact two loops of vertices connected together except the loops are stacked above each other in the cylinder while they are not stacked but rather of different radius in the circle. Applying the equations for the [cylinder](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html) we can create:
+I already showed you how we can create a [circle](/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html) and a [cylinder](/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html) (Read them first as the following example dependent on them), what we are going to create here is a circle with a hole, it can be created using two loops vertices connected to each other, but a cylinder is in fact two loops of vertices connected together except the loops are stacked above each other in the cylinder while they are not stacked but rather of different radius in the circle. Applying the equations for the [cylinder](/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html) we can create:
 
 ![Example 3 a](/images/hud-in-animation-nodes/example3a.png)
 
@@ -79,7 +79,7 @@ Now, by instancing it and randomizing its inputs and wiggling its rotation, we g
 
 HUD includes lots of waveforms, those waveforms are sometimes associated with sounds, so lets create something in that sense.
 
-We will create a circle as we learned in the [circle](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html) article, and we will set the radius to a wiggle float which when animated produces:
+We will create a circle as we learned in the [circle](/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html) article, and we will set the radius to a wiggle float which when animated produces:
 
 ![Example 4 a](/images/hud-in-animation-nodes/example4a.gif)
 

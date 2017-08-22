@@ -7,7 +7,7 @@ description: In this second tutorial in the Charts In Animation Nodes tutorial s
   we will create, automate and animate grouped bar charts.
 prerequisites:
 - text: Bar Charts in Animation Nodes tutorial.
-  url: https://squircleart.github.io/animation-nodes/charts-in-animation-nodes-bar-charts.html
+  url: /animation-nodes/charts-in-animation-nodes-bar-charts.html
 - text: Experience in Animation Nodes.
 ---
 

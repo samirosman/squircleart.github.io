@@ -8,7 +8,7 @@ description: Loops are one of the available subprograms in Animation Nodes and b
 category: Animation-Nodes
 prerequisites:
 - text: Basic knowledge of the system of Animation Nodes.
-  url: https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-the-system.html
+  url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
 ---
 
 AN has a special set of nodes called **Subprograms**. Your node tree is a program that do something, subprograms are smaller programs inside your main program that can be created one time and get used multiple times.
@@ -178,7 +178,7 @@ If my output was a generic list and I wanted to append the list as a list object
 
 # Parameters
 
-You might know by now that we can add parameters to our loop like the power parameter in [Example 4.3a](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-loops.html#example-43a). Parameters are just values that you can use in the loop and the user can define them in the Invoke node. Well, parameters are more complicated than this.
+You might know by now that we can add parameters to our loop like the power parameter in [Example 4.3a](/animation-nodes/the-essence-of-animation-nodes-loops.html#example-43a). Parameters are just values that you can use in the loop and the user can define them in the Invoke node. Well, parameters are more complicated than this.
 
 I added 3 parameters: Vector, Quaternion and a Float.
 
@@ -188,7 +188,7 @@ Looking at their options, we see that it has 4:
 
 - **Input** - If this options is enabled, the parameter will be visible as an input in the Invoke node. We see that both Float and Vector are included while quaternion isn't because I disabled it.
 - **Output** - If this option is enabled, the parameter will be included in the outputs of the Invoke node. We see that both vector and quaternion are outputs because I enabled this option for them. Why would we output what we input? we will understand this better when we look at the **Reassign option**.
-- **Copy** - If this option is enabled, the object will be copied at each iteration. Go back to the [Data article](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-data.html) to understand this better.
+- **Copy** - If this option is enabled, the object will be copied at each iteration. Go back to the [Data article](/animation-nodes/the-essense-of-animation-nodes-data.html) to understand this better.
 - **Reassign** - We will look at this option now.
 
 ## Example 4.5a

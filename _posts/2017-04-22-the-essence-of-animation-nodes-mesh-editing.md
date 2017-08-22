@@ -8,7 +8,7 @@ description: The last couple of tutorials were about procedural modeling. In thi
   Nodes which is editing the geometry of preexisting meshes.
 prerequisites:
 - text: Very Good knowledge of Loops in Animation Nodes.
-  url: https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-loops.html
+  url: /animation-nodes/the-essence-of-animation-nodes-loops.html
 - text: Basic knowledge of the spherical coordinates system.
   url: http://mathworld.wolfram.com/SphericalCoordinates.html
 ---
@@ -105,7 +105,7 @@ In the center, I have the center vertex which I computed before, it has an index
 
 Notice that in the above illustration, the indices I gave the vertices are not the actual indices of the vertices, rather they are the indices of their polygon indices when I loop over them. In other words, the indices of my polygon could be any integer, but when I loop over them, each of them takes an indices that ranges between zero and $n-1$ where $n$ is the number of vertices in that polygon.
 
-Ok, how do we compute the new polygon indices, if you read my second [tutorial](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html) on procedural modeling, you will find that the equations are almost exactly the same for trivial reasons, an so my equations becomes:
+Ok, how do we compute the new polygon indices, if you read my second [tutorial](/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html) on procedural modeling, you will find that the equations are almost exactly the same for trivial reasons, an so my equations becomes:
 
 $$
 \text{index} = (i,i+1\bmod m, i+n)

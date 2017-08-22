@@ -6,7 +6,7 @@ description: In thus tutorial, we will talk about how Animation Nodes handle dat
 category: Animation-Nodes
 prerequisites:
 - text: Basic knowledge of the system of Animation Nodes.
-  url: https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-the-system.html
+  url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
 ---
 
 We said in the previous tutorial that our node tree will be converted into a python code which can then be executed and this means that AN is some how related to how python works, so we will look at some of the properties of that system. We will also look at data types and how it is handled in AN.

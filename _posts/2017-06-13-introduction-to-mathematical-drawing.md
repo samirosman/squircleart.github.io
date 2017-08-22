@@ -8,7 +8,7 @@ description: We previously learned how to plot function to generate shapes provi
   own functions to draw shapes and patterns.
 prerequisites:
 - text: Introduction to functions plotting.
-  url: https://squircleart.github.io/shading/introduction-to-functions-plotting.html
+  url: /shading/introduction-to-functions-plotting.html
 - text: Good mathematical imagination.
 ---
 

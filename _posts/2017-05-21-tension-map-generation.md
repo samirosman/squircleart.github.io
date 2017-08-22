@@ -7,7 +7,7 @@ description: In this tutorial, I am going to teach how to generate tension maps 
   blender using Animation Nodes.
 prerequisites:
 - text: Know how to write vertex colors in Animation Nodes.
-  url: https://squircleart.github.io/animation-nodes/animation-nodes-vertex-colors.html
+  url: /animation-nodes/animation-nodes-vertex-colors.html
 ---
 
 A tension map is a map that represents the change of the density of a mesh. The change of density is usually defined as the change of areas of polygons during deformation or the change of the lengths of the edges during deformation.
@@ -17,7 +17,7 @@ The tension maps we will be creating will be computed per polygons or vertices a
 
 ## Vertex Colors
 
-The following implementation will make an intensive use of vertex colors, so make sure you read and fully understand the [Animation Nodes Vertex Colors](https://squircleart.github.io/animation-nodes/animation-nodes-vertex-colors.html) tutorial.
+The following implementation will make an intensive use of vertex colors, so make sure you read and fully understand the [Animation Nodes Vertex Colors](/animation-nodes/animation-nodes-vertex-colors.html) tutorial.
 
 ### Recap
 

@@ -8,9 +8,9 @@ description: Procedural drawing and texturing is all about plotting and editing 
   functions in blender.
 prerequisites:
 - text: Introduction to texture mapping.
-  url: https://squircleart.github.io/shading/introduction-to-texture-mapping.html
+  url: /shading/introduction-to-texture-mapping.html
 - text: Introduction to value remapping.
-  url: https://squircleart.github.io/math/value-remapping.html
+  url: /math/value-remapping.html
 - text: The ability to compute or at least understand first derivative and first order
     partial derivatives.
 - text: Have a good understanding of what functions are.
@@ -165,7 +165,7 @@ Actually, we don't, blender already computed this equation in another node which
 
 ![Example 9](/images/introduction-to-functions-plotting/example9.png)
 
-And of course, this won't have uniform thickness so we have to use that distance estimation function again. However, instead of computing the gradients ourselves, I want to show you another method, we are going to use a numerical approximation which we discussed in the [Normal Map Generation](https://squircleart.github.io/shading/normal-map-generation.html#computing-the-partial-derivation) post. So we group our function and use the central finite difference method to evaluate the partial derivatives.
+And of course, this won't have uniform thickness so we have to use that distance estimation function again. However, instead of computing the gradients ourselves, I want to show you another method, we are going to use a numerical approximation which we discussed in the [Normal Map Generation](/shading/normal-map-generation.html#computing-the-partial-derivation) post. So we group our function and use the central finite difference method to evaluate the partial derivatives.
 
 ![Example 10](/images/introduction-to-functions-plotting/example10.png)
 

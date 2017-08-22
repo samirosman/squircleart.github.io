@@ -7,7 +7,7 @@ description: In this tutorial, I am going to introduce you to script nodes in An
   Nodes and Blender Python API.
 prerequisites:
 - text: Basic knowledge of Animation Nodes.
-  url: https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-the-system.html
+  url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
 - text: Very Basic knowledge of python.
 ---
 
@@ -170,7 +170,7 @@ Image.pixels = Pixels
 
 In this example, I made it possible to change the width and height of the image. I also created a loop that compute a spherical gradient, which is created as follows:
 
-- Compute the coordinates of each pixel using what we learned from the [procedural modeling tutorial](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-procedural-modeling.html#algorithm-1).
+- Compute the coordinates of each pixel using what we learned from the [procedural modeling tutorial](/animation-nodes/the-essence-of-animation-nodes-procedural-modeling.html#algorithm-1).
 - Remape the domain into the range of $$[-1,1]$$ in both axis.
 - Use pythagoras theorem to compute the gradient.
 - Create a list with the distance in first three elements and 1 in the forth. Because we want to keep alpha at 1 and the result to be a greyscale image for the gradient.

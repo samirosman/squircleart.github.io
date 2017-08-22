@@ -8,7 +8,7 @@ description: Animation Nodes is a master when it comes to animation in blender. 
 category: Animation-Nodes
 prerequisites:
 - text: Basic knowledge of the system of Animation Nodes.
-  url: https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-the-system.html
+  url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
 - text: Be familiar with the concept of functions and their geometrical interpretations
     in mathematics.
 ---
@@ -83,7 +83,7 @@ Fcurves are functions that have a domain of $R$. Being defined in negative value
 
 ### Explanation
 
-I can use modulus arithmetic to repeat the animation every 30 frame. We used this technique in [Example 1.3b](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-vector-based-drivers.html#example-13b) if you remember correctly.
+I can use modulus arithmetic to repeat the animation every 30 frame. We used this technique in [Example 1.3b](/animation-nodes/the-essense-of-animation-nodes-vector-based-drivers.html#example-13b) if you remember correctly.
 
 {% include challenge.html content="Can you edit the previous example to achieve forward-backward repetitions?"%}
 
@@ -91,7 +91,7 @@ Here is the result of my solution to the challenge, show me yours:
 
 ![Example 3.1d](/images/the-essence-of-animation-nodes-animation/challenge.gif)
 
-If you find it hard to make the previous challenge, check [Example 1.3c](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-vector-based-drivers.html#example-13c) It uses the same algorithm required to achieve this effect.
+If you find it hard to make the previous challenge, check [Example 1.3c](/animation-nodes/the-essense-of-animation-nodes-vector-based-drivers.html#example-13c) It uses the same algorithm required to achieve this effect.
 
 ***
 
@@ -208,9 +208,9 @@ Animation nodes provide us with some nodes to ease the making of animation, thos
 
 ![Animation Nodes](/images/the-essence-of-animation-nodes-animation/animation_nodes.png)
 
-- **Delay** - This node subtract the delay from the time. Why does it exist when we can just use the subtract node? well, tell an artist to delay the animation (as we did in [example 3.1c](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-animation.html#example-31c) ) by using the *Delay* node, Ok. Now tell him to delay the animation using a subtract node, what? ... exactly.
-- **Repeat** - This node is the modulus arithmetic of the time by the repeat rate, why not just use a math node? you got the point. The node however have another option called **Ping Pong** which is equivalent to what we did in [Example 1.3c](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-vector-based-drivers.html#example-13c).
-- **Mix** - The mix nodes mixes between 2 values by some factor which is usually time. The factor is divided by the duration which is equivalent to what we did in [example 3.1c](https://squircleart.github.io/animation-nodes/the-essense-of-animation-nodes-animation.html#example-33a). The node can mix between floats,vectors,eulers,quaternions, matrices and colors. Mixing between non floats is so sophisticated that even I won't be able to do it, so we are going to leave it for a dedicated tutorial.
+- **Delay** - This node subtract the delay from the time. Why does it exist when we can just use the subtract node? well, tell an artist to delay the animation (as we did in [example 3.1c](/animation-nodes/the-essense-of-animation-nodes-animation.html#example-31c) ) by using the *Delay* node, Ok. Now tell him to delay the animation using a subtract node, what? ... exactly.
+- **Repeat** - This node is the modulus arithmetic of the time by the repeat rate, why not just use a math node? you got the point. The node however have another option called **Ping Pong** which is equivalent to what we did in [Example 1.3c](/animation-nodes/the-essense-of-animation-nodes-vector-based-drivers.html#example-13c).
+- **Mix** - The mix nodes mixes between 2 values by some factor which is usually time. The factor is divided by the duration which is equivalent to what we did in [example 3.1c](/animation-nodes/the-essense-of-animation-nodes-animation.html#example-33a). The node can mix between floats,vectors,eulers,quaternions, matrices and colors. Mixing between non floats is so sophisticated that even I won't be able to do it, so we are going to leave it for a dedicated tutorial.
 
 ## Example 3.4b
 

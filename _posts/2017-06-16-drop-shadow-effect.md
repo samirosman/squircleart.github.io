@@ -14,7 +14,7 @@ Sometime last year, I published this [product](https://blendermarket.com/product
 
 ## Ambient Shadows
 
-I have this round rectangle from my previouse [post](https://squircleart.github.io/shading/introduction-to-mathematical-drawing.html) and I want to drop some shadow from it.
+I have this round rectangle from my previouse [post](/shading/introduction-to-mathematical-drawing.html) and I want to drop some shadow from it.
 
 ![Shape](/images/drop-shadow-effect/shape.png)
 
