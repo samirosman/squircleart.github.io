@@ -10,6 +10,7 @@ prerequisites:
 - text: Experience in Animation Nodes.
 - text: HUD In Animation Nodes tutorial.
   url: /animation-nodes/hud-in-animation-nodes.html
+next_part: "/animation-nodes/charts-in-animation-nodes-grouped-bar-charts.html"
 ---
 
 We will start by creating a nice plane to plot our data on. Then we are going to create the bars. Then we are going to animate those bar into nice appealing animations.

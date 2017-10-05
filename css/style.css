@@ -368,6 +368,40 @@ code::-webkit-scrollbar-thumb {
 .highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
 
+
+/* Next Previous */
+
+.next {
+    float: right;
+    padding: 15px 30px;
+    background-color: #f5f5f5;
+    border: thin solid #e6e6e6;
+    border-radius: 3px;
+    margin: 40px 0px;
+    transition: border-bottom .1s ease;
+}
+.next:hover {
+    border-bottom: 3px solid #e6e6e6;
+}
+.next p {
+    margin: 0;
+}
+.previous {
+    float: left;
+    padding: 15px 30px;
+    background-color: #f5f5f5;
+    border: thin solid #e6e6e6;
+    border-radius: 3px;
+    margin: 40px 0px;
+    transition: border-bottom .1s ease;
+}
+.previous:hover {
+    border-bottom: 3px solid #e6e6e6;
+}
+.previous p {
+    margin: 0;
+}
+
 /* Comments */
 
 .new-comment-container {

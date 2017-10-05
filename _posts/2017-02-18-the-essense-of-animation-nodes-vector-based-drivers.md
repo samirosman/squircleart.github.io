@@ -8,6 +8,8 @@ category: Animation-Nodes
 prerequisites:
 - text: Basic knowledge of the system of Animation Nodes.
   url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
+next_part: "/animation-nodes/the-essence-of-animation-nodes-transformation-matrix.html"
+previous_part: "/animation-nodes/the-essense-of-animation-nodes-data.html"
 ---
 
 We now know the system of AN and we are ready to start make awesome node trees. We said in the preface that AN is used in multiple applications and the first one was drivers, that is, controlling some property by another. And we are going to start by studying that in multiple tutorials to keep them short.

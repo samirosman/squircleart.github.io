@@ -14,6 +14,9 @@ layout: default
   <p> {{ page.description }} </p>
 
   {{content}}
+
+  {% include next_previous.html %}
+
 </div>
 {% include new_comment.html %}
 {% include comments.html %}

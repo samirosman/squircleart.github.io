@@ -9,6 +9,8 @@ category: Animation-Nodes
 prerequisites:
 - text: Basic knowledge of the system of Animation Nodes.
   url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
+next_part: "/animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html"
+previous_part: "/animation-nodes/the-essence-of-animation-nodes-animation.html"
 ---
 
 AN has a special set of nodes called **Subprograms**. Your node tree is a program that do something, subprograms are smaller programs inside your main program that can be created one time and get used multiple times.

@@ -11,6 +11,8 @@ prerequisites:
   url: /animation-nodes/the-essence-of-animation-nodes-loops.html
 - text: Basic knowledge of the spherical coordinates system.
   url: http://mathworld.wolfram.com/SphericalCoordinates.html
+next_part: "/animation-nodes/the-essence-of-animation-nodes-scripts.html"
+previous_part: "/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html"
 ---
 
 I will give you 2 examples, one of them is fairly easy and the other is a bit more hard to do as it requires imagination which you hopefully got by now from the procedural modeling tutorials.

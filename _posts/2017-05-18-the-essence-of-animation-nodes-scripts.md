@@ -9,6 +9,7 @@ prerequisites:
 - text: Basic knowledge of Animation Nodes.
   url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
 - text: Very Basic knowledge of python.
+previous_part: "/animation-nodes/the-essence-of-animation-nodes-mesh-editing.html"
 ---
 
 You don't have to know python in order to understand this tutorial, however, it is recommended that you know the basics like I do.

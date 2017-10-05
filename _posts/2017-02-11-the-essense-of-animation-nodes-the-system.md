@@ -7,6 +7,8 @@ description: We will start this series by explaining the system of AN and the av
 category: Animation-Nodes
 prerequisites:
 - text: Basic knowledge of blender.
+next_part: "/animation-nodes/the-essense-of-animation-nodes-data.html"
+previous_part: "/animation-nodes/the-essense-of-animation-nodes-preface.html"
 ---
 
 # Execution

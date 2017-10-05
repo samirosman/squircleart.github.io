@@ -11,6 +11,8 @@ prerequisites:
   url: /animation-nodes/the-essense-of-animation-nodes-the-system.html
 - text: Be familiar with the concept of functions and their geometrical interpretations
     in mathematics.
+next_part: "/animation-nodes/the-essence-of-animation-nodes-loops.html"
+previous_part: "/animation-nodes/the-essence-of-animation-nodes-transformation-matrix.html"
 ---
 
 In this tutorial, I am going to give you some examples on modifying existing animations to create a more advanced and realistic animations as well as creating animations from scratch.

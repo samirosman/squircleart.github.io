@@ -11,6 +11,7 @@ prerequisites:
 - text: HUD In Animation Nodes.
   url: "/animation-nodes/hud-in-animation-nodes.html"
 - text: Experience In Animation Nodes.
+previous_part: "/animation-nodes/charts-in-animation-nodes-grouped-bar-charts.html"
 ---
 
 ## Utilities

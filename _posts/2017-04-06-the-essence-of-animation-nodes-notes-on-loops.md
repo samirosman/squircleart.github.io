@@ -9,6 +9,8 @@ category: Animation-Nodes
 prerequisites:
 - text: Good knowledge of Loops in Animation Nodes.
   url: /animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html
+next_part: "/animation-nodes/the-essence-of-animation-nodes-procedural-modeling.html"
+previous_part: "/animation-nodes/the-essence-of-animation-nodes-loops.html"
 ---
 
 # Tips

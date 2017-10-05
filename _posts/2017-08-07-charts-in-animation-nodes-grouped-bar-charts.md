@@ -9,6 +9,8 @@ prerequisites:
 - text: Bar Charts in Animation Nodes tutorial.
   url: /animation-nodes/charts-in-animation-nodes-bar-charts.html
 - text: Experience in Animation Nodes.
+next_part: "/animation-nodes/charts-in-animation-nodes-pie-charts.html"
+previous_part: "/animation-nodes/charts-in-animation-nodes-bar-charts.html"
 ---
 
 We are going to use the same plane we created in the bar charts tutorial with some slight modification, so lets head to data parsing and grouped bars creation directly.

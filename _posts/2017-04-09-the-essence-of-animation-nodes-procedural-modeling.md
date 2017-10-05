@@ -9,6 +9,8 @@ prerequisites:
 - text: Good knowledge of Loops in Animation Nodes.
   url: /animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html
 - text: Basic knowledge of arithmetics and vectors.
+next_part: "/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html"
+previous_part: "/animation-nodes/the-essence-of-animation-nodes-notes-on-loops.html"
 ---
 
 We can divide procedural modeling into two categories:

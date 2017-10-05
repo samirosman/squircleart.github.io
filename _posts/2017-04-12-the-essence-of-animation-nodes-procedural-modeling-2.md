@@ -9,6 +9,8 @@ prerequisites:
 - text: Part 1 of the tutorial.
   url: /animation-nodes/the-essence-of-animation-nodes-procedural-modeling-2.html
 - text: Basic knowledge of Trigonometry.
+next_part: "/animation-nodes/the-essence-of-animation-nodes-procedural-modeling-3.html"
+previous_part: "/animation-nodes/the-essence-of-animation-nodes-procedural-modeling.html"
 ---
 
 We learned before how we can make a line and a grid which are really the simplest objects you can create, we are now going to level up and create more complicated objects.

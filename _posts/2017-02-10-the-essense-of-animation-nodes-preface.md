@@ -4,6 +4,7 @@ layout: post
 image: "/images/the-essence-of-animation-nodes-preface/the-essence-of-animation-nodes.png"
 description: In this first post in the series, we will talk about Animation Nodes and get ready for the tutorial series.
 category: Animation-Nodes
+next_part: "/animation-nodes/the-essense-of-animation-nodes-the-system.html"
 ---
 
 ## Animation Nodes

@@ -1,0 +1,14 @@
+{% if {{page.next_part}} %}
+<a href="{{page.next_part}}">
+<div class="next">
+ <p>Next Part &#129146</p>
+</div>
+</a>
+{% endif %}
+{% if {{page.previous_part}} %}
+<a href="{{page.previous_part}}">
+<div class="previous">
+ <p>&#129144 Previous Part</p>
+</div>
+</a>
+{% endif %}
