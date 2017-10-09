@@ -3,7 +3,7 @@ title: 'The Essence Of Animation Nodes: The system'
 layout: post
 image: "/images/the-essence-of-animation-nodes-preface/the-essence-of-animation-nodes.png"
 description: We will start this series by explaining the system of AN and the available
-  options to control this system including execution options and possible errors.
+  options to control this system including execution routines and possible errors.
 category: Animation-Nodes
 prerequisites:
 - text: Basic knowledge of blender.
@@ -11,78 +11,74 @@ next_part: "/animation-nodes/the-essense-of-animation-nodes-data.html"
 previous_part: "/animation-nodes/the-essense-of-animation-nodes-preface.html"
 ---
 
+# Node Trees
+Animation Nodes lets you create one or more node trees where you might create a node tree for some purpose and another for some other purpose. Node trees can also share subprogrames which we will explore further on in the series.
+
+Node trees can be added and deleted as follows:
+
+![Adding Node Trees](/images/the-essence-of-animation-nodes-the-system/node-trees.gif)
+
 # Execution
 
-Animation Nodes take the node tree you created and convert it to a python code and then run that code to see the result of your node tree.
+Animation Nodes takes the node tree you created, converts it into code and then run that code.
 
-There is multiple routines and methods AN can follow to run the code and we are going to look at those options now. We will use this simple example of a node tree that sum 2 integers and display that result.
+There are multiple routines AN can follow to execute the node tree and we are going to look at those options now.
 
-![Example](/images/the-essence-of-animation-nodes-the-system/execution.gif  "Example")
+![Example](/images/the-essence-of-animation-nodes-the-system/execution.gif)
 
-First, you may have noticed that some numbers are changing very rapidly, and this is the **Execution Time** which is basically the time that AN took to convert and run the node tree and it is usually measured in milliseconds.
+First, you may noticed that some number is changing very rapidly, and this is the **Execution Time** which is basically the time that AN took to convert and run the node tree and it is usually measured in milliseconds.
 
 ## Execution methods:
 
-By default, Auto execution is enabled, which does what it says, it automatically executes the node tree based on specific rules you specify. and those rules are specified in the panel which include:
+By default, *Auto Execution* is enabled, which automatically executes the node tree based on specific rules you specify. Those rules are specified in the auto execution panel which include:
 
 #### Always:
 
-It is enabled by default and it constantly and successively runs the node tree in spite of the context and space you are in or using.
+It is enabled by default and it constantly and successively runs the node tree in spite of the context and space you are in.
 
-This option is accompanied by a property called **Min Time Difference** which is the slider you see in the panel, which basically runs the node tree every t second where t is that property.
+This option is accompanied by a property called **Min Time Difference** which is the slider you see in the panel, it basically defines the time between each two successive executions.
 
-This option consumes the CPU and thus it slow down every other process that is taking place, and you might notice blender lagging because of this.
+Most of the times, it doesn't make sense to use *Alwayse* because it is not needed. For instance, in the example above, we are adding two numbers that are not changing, meaning the result will alwayse be the same, so we don't really need to execute the node tree successively.
 
-It doesn't really make sense to keep running the node tree even if you aren't changing anything in it.
-So you really shouldn't be using that node except for some limited situations which is the situation where all other options fails, and we will give an example for that at the end.
+*Alwayse* option has its own uses and we will look at them in a moment.
 
 #### Tree Changed:
 
-This option will run the node tree whenever you add or remove a node to the current node tree.
+This option executes the node tree whenever you add or remove a node to the current node tree. It should be enabled if you want to see the changes you make to the node tree in realtime.
 
-And this is probably why you should enable it after disabling **Always** because it is probable that you will need AN to update every time you change your node tree.
+![Tree Changed](/images/the-essence-of-animation-nodes-the-system/tree-changed.gif)
 
-![Tree Changed](/images/the-essence-of-animation-nodes-the-system/tree-changed.gif  "Tree Changed")
-
-Notice how the time changed (which means AN runs) when I added another node.
+Notice how the time changed (which means AN executes) when I added a new node.
 
 #### Frame Changed:
 
-This option runs the node tree whenever the current frame change.
+This option executes the node tree whenever the current frame change. It should be enabled if your node tree depends on the current frame in anyway. That way the node tree updates whenever we playback the animation.
 
-When we get to animating using AN, it is probable that we will need to run the node tree every time the frame changes (Animation is played) because the whole node tree depends on the variable **Current Frame**.
+![Time Changed](/images/the-essence-of-animation-nodes-the-system/frame-changed.gif)
 
-Animation Nodes won't know that the frame changes unless you tell it to watch for frame change and this is done by enabling this option. So make sure to check this option whenever you are animating.
-
-![Time Changed](/images/the-essence-of-animation-nodes-the-system/frame-changed.gif  "Time Changed")
-
-Notice how the node tree runs whenever the frame change.
+Notice how the node tree executes whenever the frame change.
 
 #### Property Changed:
 
-This option runs the node tree whenever you change a value inside a node manually. If you plugged the time info node to one of the inputs and played the animation the node tree won't update because you have to manually edit the inputs.
+This option executes the node tree whenever you change a value inside a node manually. It should be enabled if you want to see the changes you make to the node tree in realtime.
 
-And this is also probably why you should enable it after disabling **Always** because it is probable that you will need AN to update every time you change a value in the node tree.
+![Property Changed](/images/the-essence-of-animation-nodes-the-system/property-changed.gif)
 
-![Property Changed](/images/the-essence-of-animation-nodes-the-system/property-changed.gif  "Property Changed")
-
-Notice how the node tree runs whenever I change a value.
+Notice how the node tree executes whenever I change a value.
 
 #### Triggers:
 
-Now you might be wondering, what if we wanted to run the node tree if an external property other than the frame changed. For instance, the location of an object, its draw options, or even its name.
+Now you might be wondering, what if we wanted to execute the node tree if an external property other than the nodes changes. For instance, the location of an object, its draw options, or even its name.
 
-This isn't the situation where you would start using **Always**, there is still another very neat feature we haven't looked at, And that is ... Triggers.
-
-Triggers are basically "watchers" that are hired by you to watch for a change in some property you told them to watch and they don't report to you but rather AN so that it can run whenever they spot a change.
+This can be done using *Triggers*. Triggers are basically "watchers" that watch for a change in some property you specified and they instruct AN to execute the node tree whenever the property they are watching changes.
 
 Lets look at an example where we are to watch for a change in an object's location so that we can get an up to date information about its location using the *Object Transforms Input* node.
 
-![Triggers](/images/the-essence-of-animation-nodes-the-system/triggers.gif  "Triggers")
+![Triggers](/images/the-essence-of-animation-nodes-the-system/triggers.gif)
 
-You can see that I added a trigger that watch for a change in an object property and chose the object to watch and typed the **Data Path** for the property I want to watch for, in this case it was `location`.
+I added a trigger that watch for a change in an object property, chose the object to watch and typed the **Data Path** for the property I want to watch for, in this case my object was *Cube* and the property data path was `location`.
 
-To get the data path for any object property, just hover it and press <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd> which will copy the *ID Data Path* for that property which you can then paste into the field for the data path.
+To get the *data path* for any object property, just hover over it and press <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd>, this will copy the *ID Data Path* for that property.
 
 Here are some examples on object data paths:
 
@@ -99,13 +95,13 @@ draw_type     #Maximum draw type.
 
 Now, what if you want to watch some other property thats isn't of an object. For instance, the strength of the background light.
 
-This can be done by choosing **Scene** instead of **Object** when adding the trigger. But getting the data path for such properties just got harder, because you have to define which context the property is in, and the best way to do so is by checking the ID path from the the **data-block** data base like so:
+This can be done by choosing **Scene** instead of **Object** when adding the trigger. But getting the data path for such properties is harder, because you have to define which context the property is in, and the best way to do so is by checking the ID path from the the **data-block** database like so:
 
-![Data Path](/images/the-essence-of-animation-nodes-the-system/data-path.png  "Data Path")
+![Data Path](/images/the-essence-of-animation-nodes-the-system/data-path.png)
 
 Examples:
 
-~~~python
+```python
 
 render.resolution_x
 #Notice that the original one was:
@@ -119,48 +115,44 @@ bpy.data.node_groups["Shader Nodetree"].nodes["Background"].inputs[1]
 
 bpy.data.objects["Cube"].modifiers["Subsurf"].levels
 
-~~~
+```
 
 ### When to use Always?
 
-Always is what I consider a last resort for most of the applications, when everything fails to make the running at the right time, I use always.
+Consider the scenario where we have tenths of objects transforming with lots of properties changing. Adding triggers to all that will be a tediouse process, in that case we just use *Alwayse*.
 
-Consider the scenario where we have tenths of objects that we use their location in our node tree, adding a trigger for every object will be a tedious and inefficient job, So we use **Always** in this situation instead.
-
-Another situation where **Always** is in fact a very good solution is simulations and especially ones that are iterative like PDEs where I want to see the simulation in real time and let it run as fast as possible.
+Another situation where *Always* is in fact a very good solution is numerical simulations and especially ones that are iterative like solving PDEs where I want to see the simulation in real time and let it run as fast as possible as much as possible.
 
 ### Manual Execution:
 
-Last but not least, the **Execute note tree** button which just run the node tree when you press it.
+Last but not least, the **Execute Node Tree** button which just executes the node tree when you press it.
 
-I usually use that while disabling **Auto execution** when I am working on a risky node tree that may return some fatal errors or when I am doing an operator that only need to run once.
-
----
-
-You should now be aware of what works the best for you and the project you are working on when it comes to the optimal execution method.
-
-Let's now look at errors that you may encounter while working on your projects.
+I usually use that while disabling *Auto execution* when I am working on a risky node tree that may return errors or when I am doing an operator that only need to run once.
 
 ## Errors
 
-We will divide the errors into couple of types and look at why they are there and how to solve them.
+During the execution of the node tree,  AN might encounter some errors, those errors are either fatal or non-fatal.
 
-### Non fatal Errors:
+### Non-fatal Errors:
 
-Those errors happen at individual nodes and doesn't affect the rest of the tree and it doesn't stop its execution.
+Those errors are encountered at individual nodes, it doesn't affect the rest of the node tree and it does not stop its execution.
 
 #### Example:
 
-![Non fatal Errors](/images/the-essence-of-animation-nodes-the-system/nonfatal-errors.png  "Non fatal Errors")
+![Non-Fatal Errors](/images/the-essence-of-animation-nodes-the-system/nonfatal-error.png)
 
-Most of these errors are just errors caused by nodes for obvious reasons and they are easy to fix. I am guessing you know how to fix that error, don't you?
+Those errors are encountered for obviouse reasons and the node will most certainly tell you what the error is and how to fix it. In the above example it tells you that the axis should be different and not both be set to `z`.
 
-### fatal Errors:
+### Fatal Errors:
 
-Those are nightmares, they are designed to wake you at night.
+As the name suggest, those errors are fatal, meaning that they will stop the execution of the whole node tree till they get resolved.
 
-They stop the whole node tree from executing and won't run till you fix them. Some of them even need to restart blender after fixing the problem.
+They happen due to an error in the code of the nodes itself, it probably happens when you try to do something with the node that the developers didn't consider, but AN is smart and avoids almost all of those complications.
 
-They happen due to an error in the python code of the nodes itself which probably happens when you try to do something with the node that the developers didn't consider, but AN is smart and avoids almost all of those complications. This may also happen when you try to code something yourself that isn't really right.
+AN will display a red border, stop executing and tells you to report this bug to the developers. For instance, if you have a syntax error in an expression node while *Debug Mode* is disabled, this will be considiered as a fatal error:
 
-AN will display a red border and stop executing and tells you to report this bug to the developers, because it is probably is, so report when ever this happens to you.
+![Fatal Errors](/images/the-essence-of-animation-nodes-the-system/fatal-error.png)
+
+If the error is caused by you (as in the example above), once resolved, press *Retry*  to refresh AN. If you are unsure which node is causing the error, you can try switching to *Monitor Execution* in the *Developer* panel, it will display the name of the node that causes the error, which is the expression node in the example above.
+
+![Fatal Errors](/images/the-essence-of-animation-nodes-the-system/monitor-execution.png)

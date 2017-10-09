@@ -2,7 +2,7 @@
 title: 'The Essence Of Animation Nodes: Preface'
 layout: post
 image: "/images/the-essence-of-animation-nodes-preface/the-essence-of-animation-nodes.png"
-description: In this first part in the series, we will talk about Animation Nodes
+description: In this first part of the series, we will talk about Animation Nodes
   and get ready for the tutorial series.
 category: Animation-Nodes
 next_part: "/animation-nodes/the-essense-of-animation-nodes-the-system.html"
@@ -30,9 +30,9 @@ Being a student myself, I didn't really need any of these programs because Anima
 
 ### What can be done?
 
-You might be thinking, **"Animation"** Nodes is a tool to make ... well, animations. And this is a common misconception.
+You might be thinking, "Animation" Nodes is a tool to make ... well, animations. And this is a common misconception.
 
-Let me tell you that Animation Nodes is in fact somewhat not capable of doing animations. As we said before Animation Nodes can be used to control objects' properties based on some other properties and we can utilize this to animate, that is, controlling objects properties based on time and that we call a **Function of time**.
+Let me tell you that Animation Nodes is in fact somewhat not capable of doing animations. As we said, before Animation Nodes can be used to control objects' properties based on some other properties and we can utilize this to animate, that is, controlling objects properties based on time and that we call a **Function of time**.
 I am telling you this because I want to change your idea about the capabilities of Animation Nodes and to be more open minded about the possibilities here.
 
 I have been using Animation Nodes for almost 8 months now. And I want you to take my word for it:
@@ -52,8 +52,9 @@ Since then, Jacques has been actively developing Animation Nodes making it easie
 
 ### Important Links
 
-- [Animation Node's Github Reposatory](https://github.com/JacquesLucke/animation_nodes)
-- [Animation Node's Release Page](https://github.com/JacquesLucke/animation_nodes/releases)
+- [Animation Node's Github Reposatory.](https://github.com/JacquesLucke/animation_nodes)
+- [Animation Node's Release Page.](https://github.com/JacquesLucke/animation_nodes/releases)
+- [Animation Node's Documentation.](http://animation-nodes-manual.readthedocs.io/en/latest/)
 
 ## The Essence Of Animation Nodes
 
