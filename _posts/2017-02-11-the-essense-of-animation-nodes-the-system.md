@@ -38,9 +38,9 @@ It is enabled by default and it constantly and successively runs the node tree i
 
 This option is accompanied by a property called **Min Time Difference** which is the slider you see in the panel, it basically defines the time between each two successive executions.
 
-Most of the times, it doesn't make sense to use *Alwayse* because it is not needed. For instance, in the example above, we are adding two numbers that are not changing, meaning the result will alwayse be the same, so we don't really need to execute the node tree successively.
+Most of the times, it doesn't make sense to use *Always* because it is not needed. For instance, in the example above, we are adding two numbers that are not changing, meaning the result will always be the same, so we don't really need to execute the node tree successively.
 
-*Alwayse* option has its own uses and we will look at them in a moment.
+*Always* option has its own uses and we will look at them in a moment.
 
 #### Tree Changed:
 
@@ -93,7 +93,7 @@ draw_type     #Maximum draw type.
 
 ~~~
 
-Now, what if you want to watch some other property thats isn't of an object. For instance, the strength of the background light.
+Now, what if you want to watch some other property that isn't of an object. For instance, the strength of the background light.
 
 This can be done by choosing **Scene** instead of **Object** when adding the trigger. But getting the data path for such properties is harder, because you have to define which context the property is in, and the best way to do so is by checking the ID path from the the **data-block** database like so:
 
@@ -106,7 +106,7 @@ Examples:
 render.resolution_x
 #Notice that the original one was:
 bpy.data.scenes["Scene"].render.resolution_x
-#But the first part was omited
+#But the first part was omitted
 #because scene was already defined in the trigger.
 
 #Notice how we defined the group first
@@ -119,7 +119,7 @@ bpy.data.objects["Cube"].modifiers["Subsurf"].levels
 
 ### When to use Always?
 
-Consider the scenario where we have tenths of objects transforming with lots of properties changing. Adding triggers to all that will be a tediouse process, in that case we just use *Alwayse*.
+Consider the scenario where we have tenths of objects transforming with lots of properties changing. Adding triggers to all that will be a tedious process, in that case we just use *Always*.
 
 Another situation where *Always* is in fact a very good solution is numerical simulations and especially ones that are iterative like solving PDEs where I want to see the simulation in real time and let it run as fast as possible as much as possible.
 
@@ -141,7 +141,7 @@ Those errors are encountered at individual nodes, it doesn't affect the rest of 
 
 ![Non-Fatal Errors](/images/the-essence-of-animation-nodes-the-system/nonfatal-error.png)
 
-Those errors are encountered for obviouse reasons and the node will most certainly tell you what the error is and how to fix it. In the above example it tells you that the axis should be different and not both be set to `z`.
+Those errors are encountered for obvious reasons and the node will most certainly tell you what the error is and how to fix it. In the above example it tells you that the axis should be different and not both be set to `z`.
 
 ### Fatal Errors:
 
@@ -149,7 +149,7 @@ As the name suggest, those errors are fatal, meaning that they will stop the exe
 
 They happen due to an error in the code of the nodes itself, it probably happens when you try to do something with the node that the developers didn't consider, but AN is smart and avoids almost all of those complications.
 
-AN will display a red border, stop executing and tells you to report this bug to the developers. For instance, if you have a syntax error in an expression node while *Debug Mode* is disabled, this will be considiered as a fatal error:
+AN will display a red border, stop executing and tells you to report this bug to the developers. For instance, if you have a syntax error in an expression node while *Debug Mode* is disabled, this will be considered as a fatal error:
 
 ![Fatal Errors](/images/the-essence-of-animation-nodes-the-system/fatal-error.png)
 

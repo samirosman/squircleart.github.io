@@ -3,7 +3,7 @@ collections:
 
 markdown: kramdown
 highlighter: rouge
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
