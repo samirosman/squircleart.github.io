@@ -1,0 +1,7 @@
+_id: 4818fbf0-db6b-11e7-95c9-2dc45a1a7a05
+message: "Thanks for notifying, I will fix example `1.3` as soon as I get the chance.\r\n\r\nA possible solution to this challenge is using this equation:\r\n\r\n$$\r\n2\\vert x \\bmod i-\\frac{i}{2}\\vert\r\n$$\r\n\r\nWhere $i$ is the repetition interval which is 30 in our example. The above equation produces the ping-pong effect we are after:\r\n\r\n![Plot](https://i.imgur.com/YxKBwFU.png)"
+name: Omar Ahmad
+email: e913cb00ff357db1cea81e0ab2a05fb5
+date: '2017-12-07T16:25:47.865Z'
+tags:
+  - ''
