@@ -1,0 +1,10 @@
+_id: 46e2ddc0-f1e4-11e7-9668-8d5639c5ebab
+message: >-
+  Hi Omar! Great Article as always. I have a question. Can these operations
+  generate a normal map from a height map if the height map is outside the range
+  of values [0,1]? If not, then is it even possible to generate normal maps from
+  these type of height maps? Thanks in advance :D
+name: Raj krishan Ghosh
+email: 2b9527d8bb03fb07df6ec4bc027a4195
+date: '2018-01-05T06:47:20.639Z'
+timestamp: 1515134840
