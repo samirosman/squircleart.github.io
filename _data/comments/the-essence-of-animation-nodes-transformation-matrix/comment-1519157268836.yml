@@ -1,0 +1,11 @@
+_id: b8d5e6c0-1679-11e8-b1fd-f167a257a673
+message: >-
+  Not sure what you mean ZMG. If you are asking which numbers of the matrix
+  changes when multiplying by a rotation and scale, for rotation it is the first
+  $3 \times 3$ numbers from the top left, for scaling, it is the diagonal of the
+  same numbers.
+name: Omar Ahmad
+email: e913cb00ff357db1cea81e0ab2a05fb5
+date: '2018-02-20T20:07:48.835Z'
+approved: false
+title: Comment
