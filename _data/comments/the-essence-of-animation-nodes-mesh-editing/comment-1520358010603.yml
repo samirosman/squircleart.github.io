@@ -1,0 +1,5 @@
+_id: 6ac0e4c0-2165-11e8-aa9c-dfa80684aaf4
+message: "The **Vertices** option in the *Object Output Node* is a bit tricky to use. It assumes there is already a mesh in the object with the same number of vertices as the input vector list. The problem is, when you added the *Object Output Node* and enabled mesh, the mesh got overwritten by nothing and thus it no longer works with vertices option. So you have to make sure not to overwrite your mesh before you enable vertices option.\r\n\r\nHowever, I would suggest to use the the **Mesh** option instead and compose the mesh using the *Combine Mesh Node* like we did in the next [Implementation](https://squircleart.github.io/animation-nodes/the-essence-of-animation-nodes-mesh-editing.html#implementation-1) if performance is not a big concern.\r\n\r\nThanks for reading my writings. Most tutorials became rather outdated and I will be updating them and writing more as soon as I finish my exams. So you might want to check again after updating."
+name: Omar Ahmad
+email: e913cb00ff357db1cea81e0ab2a05fb5
+date: '2018-03-06T17:40:10.601Z'
