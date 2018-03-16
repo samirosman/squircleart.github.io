@@ -1,0 +1,6 @@
+_id: 24c9d2f0-2927-11e8-9355-9ff5c65d6e8d
+message: "Hi Omar, i tried to recreate the node tree for the plane=> mercator conversation via an expression:\r\n((math.cos(-2*pi*x))*(math.sin(pi*y)))*1, (math.sin(pi*y))*(math.sin(-2*pi*x))*-1,math.cos(pi*y)*-1 It works!\r\nInputs into the expression nodes are the separated Vectors  as xy values in the loop. the 3rd Vector value for z is generated in the expression. Man what a fun !\r\nThe reason why i tried this was, that i thought an expressions instead of 11 math nodes would accelarate this operation. But it is 3 times slower via a expression.\r\nBut im proud of my self that i got the right expression in the end :D\r\n\r\nPs.: Omar i looked at your Github An Clones. The solidify and the array stuff is very exciting. DO you have compiled versions of the these? Best Regards !"
+name: Tungee
+email: 84aa0a1e59815506e2596ecd6f0ced55
+date: '2018-03-16T14:34:33.664Z'
+layout: post
