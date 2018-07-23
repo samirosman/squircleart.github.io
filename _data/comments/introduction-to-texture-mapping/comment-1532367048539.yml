@@ -1,0 +1,5 @@
+_id: 2340daf0-8e9e-11e8-93c8-dd8df496049a
+message: "Hi Alex,\r\nThe type of projection you need for those kind of images is a simple orthogonal projection (Assuming the image was captured in similar manner). By orthogonal projection I mean using the local texture coordinates as is for one side image and using its inverse (Multiply the negative axis by negative 1) for the other side image. In Cycles, this local coordinates is simply the *Generated Texture Coordinates* for the sphere."
+name: Omar Ahmad
+email: e913cb00ff357db1cea81e0ab2a05fb5
+date: '2018-07-23T17:30:48.538Z'
