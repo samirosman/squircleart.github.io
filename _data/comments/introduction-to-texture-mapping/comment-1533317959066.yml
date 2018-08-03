@@ -1,0 +1,5 @@
+_id: 260f3020-9744-11e8-8b4d-27ecd4f7397d
+message: "First, thanks for this nice work. Even for a non blender user, it clarifies concepts. I am coding stuffs in Java+LWJGL and now I am trying to understand concepts and tecniques of texture mapping.\r\n\r\nI have two questions.\r\n\r\n1- In the examples 1 and 2, can I call this planar projection?\r\n\r\n2- For a irregular mesh, one generated procedurally, like a volumetric terrain, which projection to use? I read something about triplanar. There are another options?"
+name: Paulo Coral
+email: bff185877a76a07138f64778cccb6b13
+date: '2018-08-03T17:39:19.064Z'
