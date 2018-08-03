@@ -1,0 +1,5 @@
+_id: 86dfbae0-974f-11e8-8b4d-27ecd4f7397d
+message: "Hi Paulo,\r\n1. Yes, I think you can consider them as planer projections. \r\n2. While I am not familiar with any specialized projection method for procedural modeling, I don't think triplanar projection is the answer. In procedural modeling, you usually know much more about your objects and the formulas that describe them. For instance, the gradient of a terrain described using a simplex noise can be used to aid texture coordinates generation improving the uniformity of the projection. So, I would suggest you spend some more time researching better methods for projection. Sorry I couldn't be of help here."
+name: Omar Ahmad
+email: e913cb00ff357db1cea81e0ab2a05fb5
+date: '2018-08-03T19:00:46.088Z'
