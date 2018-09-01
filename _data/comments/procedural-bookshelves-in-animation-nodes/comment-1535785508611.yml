@@ -1,0 +1,9 @@
+_id: 5c2ba490-adb5-11e8-a777-e5f8bc969358
+message: >-
+  Hey laaameche, those are not nodes, they are generators and reassignment
+  operators and they didn't change in the new version. Refer to the
+  [documentation](https://animation-nodes-manual.readthedocs.io/en/latest/user_guide/subprograms/loop.html)
+  on loops to understand this better.
+name: Omar Ahmad
+email: e913cb00ff357db1cea81e0ab2a05fb5
+date: '2018-09-01T07:05:08.611Z'
