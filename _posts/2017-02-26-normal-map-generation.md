@@ -143,9 +143,9 @@ By normalizing that, we get the final equation:
 {% raw %}
 $$\begin{equation}
 \boxed{
-\vec{N_x} = \frac{-\frac{\partial F}{\partial x}}{\sqrt{{\frac{\partial F}{\partial x}}^2 + {\frac{\partial F}{\partial x}}^2 +1 }} \\
-\vec{N_y} = \frac{-\frac{\partial F}{\partial y}}{\sqrt{{\frac{\partial F}{\partial y}}^2 + {\frac{\partial F}{\partial y}}^2 +1 }}\\
-\vec{N_z} = \frac{1}{\sqrt{{\frac{\partial F}{\partial x}}^2 + {\frac{\partial F}{\partial x}}^2 +1 }}
+\vec{N_x} = \frac{-\frac{\partial F}{\partial x}}{\sqrt{{\frac{\partial F}{\partial x}}^2 + {\frac{\partial F}{\partial y}}^2 +1 }} \\
+\vec{N_y} = \frac{-\frac{\partial F}{\partial y}}{\sqrt{{\frac{\partial F}{\partial x}}^2 + {\frac{\partial F}{\partial y}}^2 +1 }}\\
+\vec{N_z} = \frac{1}{\sqrt{{\frac{\partial F}{\partial x}}^2 + {\frac{\partial F}{\partial y}}^2 +1 }}
 }  \label{5}
 \end{equation}
 $$
